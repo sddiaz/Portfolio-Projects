@@ -1,18 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Windows.Threading;
 namespace Portfolio_Calculator
 {
@@ -35,22 +26,56 @@ namespace Portfolio_Calculator
             timer();
 
             #region Proportionality relative to Screen
+            double buttonSize = SystemParameters.PrimaryScreenWidth * 0.04; 
+            GridLengthConverter myConverter = new GridLengthConverter(); 
             this.Height = SystemParameters.PrimaryScreenHeight * 0.82;
             this.Width = SystemParameters.PrimaryScreenWidth * 0.22;
-            darkModeGrid.Width = SystemParameters.PrimaryScreenWidth * 0.05;
-            darkModeGrid.Height = SystemParameters.PrimaryScreenHeight * 0.0333;
-            darkModeGrid2.Width = SystemParameters.PrimaryScreenWidth * 0.05;
-            darkModeGrid2.Height = SystemParameters.PrimaryScreenHeight * 0.0333;
-            BottomGrid.Height = SystemParameters.PrimaryScreenHeight * 0.533;
-           
-
-            /*            TopGrid.Height = SystemParameters.PrimaryScreenHeight * 0.3;
-                        TopGrid.Width = SystemParameters.PrimaryScreenWidth * 0.22;
-                       *//* BottomGrid.Height = SystemParameters.PrimaryScreenHeight * 0.62; *//*
-                        BottomGrid.Width = SystemParameters.PrimaryScreenWidth * 0.22;
-                       *//* cosmeticGrid.Height = SystemParameters.PrimaryScreenHeight * 0.01;*//*
-                        cosmeticGrid.Width = SystemParameters.PrimaryScreenWidth * 0.22;*/
-
+            darkModeGrid.Height = SystemParameters.PrimaryScreenHeight * 0.02;
+            darkModeGrid.Width = SystemParameters.PrimaryScreenWidth * 0.03;
+            this.mainGrid.RowDefinitions[0].Height = (GridLength)myConverter.ConvertFromString((SystemParameters.PrimaryScreenHeight * 0.32).ToString());
+            this.mainGrid.RowDefinitions[1].Height = (GridLength)myConverter.ConvertFromString((SystemParameters.PrimaryScreenHeight * 0.47).ToString());
+            #region Nightmare
+            AC.Width = buttonSize;
+            AC.Height = buttonSize;
+            plusMinus.Width = buttonSize;
+            plusMinus.Height = buttonSize;
+            percent.Width = buttonSize;
+            percent.Height = buttonSize;
+            divide.Width = buttonSize;
+            divide.Height = buttonSize; 
+            seven.Height = buttonSize;
+            seven.Width = buttonSize;
+            six.Height = buttonSize;
+            six.Width = buttonSize;
+            five.Height = buttonSize;
+            five.Width = buttonSize;
+            four.Height = buttonSize;
+            four.Width = buttonSize;
+            three.Height = buttonSize;
+            three.Width = buttonSize;
+            two.Height = buttonSize;
+            two.Width = buttonSize;
+            one.Height = buttonSize;
+            one.Width = buttonSize;
+            zero.Height = buttonSize;
+            zero.Width = buttonSize;
+            dot.Height = buttonSize;
+            dot.Width = buttonSize;
+            redo.Height = buttonSize;
+            redo.Width = buttonSize;
+            equals.Height = buttonSize;
+            equals.Width = buttonSize;
+            add.Height = buttonSize;
+            add.Width = buttonSize;
+            subtract.Height = buttonSize;
+            subtract.Width = buttonSize;
+            multiply.Height = buttonSize;
+            multiply.Width = buttonSize;
+            eight.Height = buttonSize;
+            eight.Width = buttonSize;
+            nine.Height = buttonSize;
+            nine.Width = buttonSize;
+            #endregion
             #endregion
         }
 

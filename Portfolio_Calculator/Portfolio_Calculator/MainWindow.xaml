@@ -9,9 +9,8 @@
     <Border x:Name="mainBorder" CornerRadius="25">
         <Grid x:Name="mainGrid">
             <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
+                <RowDefinition x:Name="row1" Height="*"/>
+                <RowDefinition x:Name="row2" Height="*" />
             </Grid.RowDefinitions>
             <!--This is our button section, it consists of 4 columns & 5 rows.-->
             <Grid Background="#f9f9f9"  x:Name="BottomGrid" Grid.Row="1">
@@ -466,7 +465,7 @@
                 </Border>
             </Grid>
             <!--This bar is purely cosmetic and serves no purpose :(-->
-            <Grid x:Name="cosmeticGrid" Grid.Row="2">
+            <Grid Visibility="Collapsed" x:Name="cosmeticGrid">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>

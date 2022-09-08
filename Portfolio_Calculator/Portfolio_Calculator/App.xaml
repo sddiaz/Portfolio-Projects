@@ -8,11 +8,9 @@
         <ResourceDictionary>
             <Style x:Name="whiteStyle" TargetType="Button">
                 <Style.Resources>
-                    <Style TargetType="Border">
+                    <Style x:Name="bruh" TargetType="Border">
                         <Setter Property="CornerRadius" Value="25" />
                         <Setter Property="Background" Value="White"/>
-                        <Setter Property="Width" Value="70"/>
-                        <Setter Property="Height" Value="70"/>
                     </Style>
                 </Style.Resources>
                 <Style.Triggers>
@@ -46,12 +44,11 @@
                         </Setter>
                     </Trigger>
                 </Style.Triggers>
-                <Setter Property="FontSize" Value="35"/>
+                <Setter Property="FontSize" Value="45"/>
                 <Setter Property="Background" Value="#f9f9f9"/>
                 <Setter Property="BorderThickness" Value="0"/>
                 <Setter Property="FontWeight" Value="Bold"/>
                 <Setter Property="FontFamily" Value="Inter"/>
-
             </Style>
 
             <Style TargetType="Label">
@@ -79,7 +76,6 @@
                 </Style.Triggers>
                 <Setter Property="CornerRadius" Value="25"/>
                 <Setter Property="Background" Value="White"/>
-
             </Style>
         </ResourceDictionary>
     </Application.Resources>

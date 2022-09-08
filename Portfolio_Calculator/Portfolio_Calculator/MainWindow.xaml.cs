@@ -34,9 +34,19 @@ namespace Portfolio_Calculator
             InitializeComponent();
             timer();
 
-            #region Proportionality
+            #region Proportionality relative to Screen
             this.Height = SystemParameters.PrimaryScreenHeight * 0.82;
             this.Width = SystemParameters.PrimaryScreenWidth * 0.22;
+            mainGrid.Width = SystemParameters.PrimaryScreenWidth * 0.22;
+            darkModeGrid.Width = SystemParameters.PrimaryScreenWidth * 0.05;
+            darkModeGrid.Height = SystemParameters.PrimaryScreenHeight * 0.0333;
+            TopGrid.Height = SystemParameters.PrimaryScreenHeight * 0.3;
+            TopGrid.Width = SystemParameters.PrimaryScreenWidth * 0.22;
+            BottomGrid.Height = SystemParameters.PrimaryScreenHeight * 0.42;
+            BottomGrid.Width = SystemParameters.PrimaryScreenWidth * 0.22;
+            cosmeticGrid.Height = SystemParameters.PrimaryScreenHeight * 0.1;
+            cosmeticGrid.Width = SystemParameters.PrimaryScreenWidth * 0.22;
+
             #endregion
         }
 

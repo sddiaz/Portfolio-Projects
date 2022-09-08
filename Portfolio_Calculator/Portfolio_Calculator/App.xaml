@@ -10,10 +10,9 @@
                 <Style.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="25" />
-                        <Setter Property="Width" Value="115"/>
-                        <Setter Property="Height" Value="110"/>
                         <Setter Property="Background" Value="White"/>
-
+                        <Setter Property="Width" Value="70"/>
+                        <Setter Property="Height" Value="70"/>
                     </Style>
                 </Style.Resources>
                 <Style.Triggers>
@@ -47,7 +46,7 @@
                         </Setter>
                     </Trigger>
                 </Style.Triggers>
-                <Setter Property="FontSize" Value="55"/>
+                <Setter Property="FontSize" Value="35"/>
                 <Setter Property="Background" Value="#f9f9f9"/>
                 <Setter Property="BorderThickness" Value="0"/>
                 <Setter Property="FontWeight" Value="Bold"/>

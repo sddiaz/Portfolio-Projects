@@ -5,90 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Portfolio_Calculator" AllowsTransparency="True"
         mc:Ignorable="d" ResizeMode="NoResize" WindowStyle="None"
-        WindowStartupLocation="CenterScreen" Background="Transparent" 
-        Height="1155" Width="550">
-    <Border CornerRadius="25">
+        WindowStartupLocation="CenterScreen" Background="Transparent">
+    <Border x:Name="mainBorder" CornerRadius="25">
         <Grid x:Name="mainGrid">
             <Grid.RowDefinitions>
-                <RowDefinition Height="432"/>
-                <RowDefinition Height="648" />
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
-
-            <!--This is our display section, consisting of the displayed values, time, and darkmode button.-->
-            <Grid x:Name="TopGrid" Grid.Row="0" Background="Transparent">
-                <Grid.RowDefinitions>
-
-                    <!--Text-->
-
-                    <RowDefinition Height="*"/>
-
-                    <!--Theme Button(s)-->
-
-                    <RowDefinition Height="*"/>
-
-                    <!--Time-->
-
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <Label x:Name="timeLabel" FontFamily="Inter" FontWeight="Bold" FontSize="20" Margin="12.5,12.5,0,0" Content="00:00"/>
-                <Button HorizontalAlignment="Right" Background="Transparent" Content="➜" FontSize="30" Margin="0,12.5,-12.5,0" Click="exit_Click" VerticalAlignment="Top" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Width="100">
-                    <Button.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="20"/>
-                        </Style>
-                    </Button.Resources>
-                </Button>
-                <Viewbox  Grid.Row="2" HorizontalAlignment="Right">
-                    <Label x:Name="numberLabel"  FontWeight="Bold" FontSize="75"/>
-                </Viewbox>
-                <Viewbox Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Right" >
-                    <Label x:Name="previousExpressionLabel" Grid.Row="1" Opacity=".5" FontWeight="Bold" FontSize="35">
-                        <Label.Foreground x:Uid="blueForeGround">
-
-                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1" >
-
-                                <GradientStop Color="#72F2EB" Offset="0.1" />
-
-                                <GradientStop Color="Black" Offset="1.5" />
-
-                            </LinearGradientBrush>
-
-                        </Label.Foreground>
-                    </Label>
-                </Viewbox>
-                <Border Background="#f7f7f7" x:Name="darkModeGrid" CornerRadius="15" VerticalAlignment="Center">
-                    <Border.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="20"/>
-                        </Style>
-                    </Border.Resources>
-                    <Grid Width="125" Height="50" HorizontalAlignment="Center"  Background="Transparent">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                        <Button Width="125" Height="50" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="24" Name="moon" Content="☾" Grid.Column="1" BorderThickness="0" Click="darkMode_Click" Background="Transparent">
-                            <Button.Resources>
-                                <Style TargetType="Border">
-                                    <Setter Property="CornerRadius" Value="20"/>
-                                </Style>
-                            </Button.Resources>
-                        </Button>
-                        <Button Width="125" Height="50" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="24" Name="sun" Content="☼" Grid.Column="0" BorderThickness="0" Click="darkMode_Click" Background="Transparent">
-                            <Button.Resources>
-                                <Style TargetType="Border">
-                                    <Setter Property="CornerRadius" Value="20"/>
-                                </Style>
-                            </Button.Resources>
-                        </Button>
-                    </Grid>
-                </Border>
-            </Grid>
-
             <!--This is our button section, it consists of 4 columns & 5 rows.-->
-
-            <Grid Background="#f9f9f9" x:Name="BottomGrid" Grid.Row="1">
+            <Grid Background="#f9f9f9"  x:Name="BottomGrid" Grid.Row="1">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
@@ -469,10 +395,78 @@
                     </Button.Triggers>
                 </Button>
             </Grid>
+            <!--This is our display section, consisting of the displayed values, time, and darkmode button.-->
+            <Grid x:Name="TopGrid" Grid.Row="0" Background="Transparent">
+                <Grid.RowDefinitions>
 
+                    <!--Text-->
+
+                    <RowDefinition Height="*"/>
+
+                    <!--Theme Button(s)-->
+
+                    <RowDefinition Height="*"/>
+
+                    <!--Time-->
+
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label x:Name="timeLabel" FontFamily="Inter" FontWeight="Bold" FontSize="20" Margin="12.5,12.5,0,0" Content="00:00"/>
+                <Button HorizontalAlignment="Right" Background="Transparent" Content="➜" FontSize="30" Margin="0,12.5,-12.5,0" Click="exit_Click" VerticalAlignment="Top" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" Width="100">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="20"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+                <Viewbox  Grid.Row="2" HorizontalAlignment="Right">
+                    <Label x:Name="numberLabel"  FontWeight="Bold" FontSize="75"/>
+                </Viewbox>
+                <Viewbox Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Right" >
+                    <Label x:Name="previousExpressionLabel" Grid.Row="1" Opacity=".5" FontWeight="Bold" FontSize="35">
+                        <Label.Foreground x:Uid="blueForeGround">
+
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1" >
+
+                                <GradientStop Color="#72F2EB" Offset="0.1" />
+
+                                <GradientStop Color="Black" Offset="1.5" />
+
+                            </LinearGradientBrush>
+
+                        </Label.Foreground>
+                    </Label>
+                </Viewbox>
+                <Border Background="#f7f7f7" x:Name="darkModeGrid" CornerRadius="15" VerticalAlignment="Center">
+                    <Border.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="20"/>
+                        </Style>
+                    </Border.Resources>
+                    <Grid x:Name="darkModeGrid2" Width="55" Height="40" HorizontalAlignment="Center"  Background="Transparent">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="24" Name="moon" Content="☾" Grid.Column="1" BorderThickness="0" Click="darkMode_Click" Background="Transparent">
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="20"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                        <Button HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="24" Name="sun" Content="☼" Grid.Column="0" BorderThickness="0" Click="darkMode_Click" Background="Transparent">
+                            <Button.Resources>
+                                <Style TargetType="Border">
+                                    <Setter Property="CornerRadius" Value="20"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                    </Grid>
+                </Border>
+            </Grid>
             <!--This bar is purely cosmetic and serves no purpose :(-->
-
-            <Grid x:Name="cosmeticGrid" Grid.Row="2" Background="Transparent">
+            <Grid x:Name="cosmeticGrid" Grid.Row="2">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>

@@ -37,15 +37,19 @@ namespace Portfolio_Calculator
             #region Proportionality relative to Screen
             this.Height = SystemParameters.PrimaryScreenHeight * 0.82;
             this.Width = SystemParameters.PrimaryScreenWidth * 0.22;
-            mainGrid.Width = SystemParameters.PrimaryScreenWidth * 0.22;
             darkModeGrid.Width = SystemParameters.PrimaryScreenWidth * 0.05;
             darkModeGrid.Height = SystemParameters.PrimaryScreenHeight * 0.0333;
-            TopGrid.Height = SystemParameters.PrimaryScreenHeight * 0.3;
-            TopGrid.Width = SystemParameters.PrimaryScreenWidth * 0.22;
-            BottomGrid.Height = SystemParameters.PrimaryScreenHeight * 0.42;
-            BottomGrid.Width = SystemParameters.PrimaryScreenWidth * 0.22;
-            cosmeticGrid.Height = SystemParameters.PrimaryScreenHeight * 0.1;
-            cosmeticGrid.Width = SystemParameters.PrimaryScreenWidth * 0.22;
+            darkModeGrid2.Width = SystemParameters.PrimaryScreenWidth * 0.05;
+            darkModeGrid2.Height = SystemParameters.PrimaryScreenHeight * 0.0333;
+            BottomGrid.Height = SystemParameters.PrimaryScreenHeight * 0.533;
+           
+
+            /*            TopGrid.Height = SystemParameters.PrimaryScreenHeight * 0.3;
+                        TopGrid.Width = SystemParameters.PrimaryScreenWidth * 0.22;
+                       *//* BottomGrid.Height = SystemParameters.PrimaryScreenHeight * 0.62; *//*
+                        BottomGrid.Width = SystemParameters.PrimaryScreenWidth * 0.22;
+                       *//* cosmeticGrid.Height = SystemParameters.PrimaryScreenHeight * 0.01;*//*
+                        cosmeticGrid.Width = SystemParameters.PrimaryScreenWidth * 0.22;*/
 
             #endregion
         }
@@ -304,7 +308,14 @@ namespace Portfolio_Calculator
                 string currentString = numberLabel.Content.ToString();
                 if (Operands.Count == 1)
                 {
-                   if (currentString.Count(x => x == '.') < 2)
+                   if (Operands.ElementAt(0).ToString().Contains("."))
+                    {
+                        if (currentString.Count(x => x == '.') < 2)
+                        {
+                            numberLabel.Content += ".";
+                        }
+                    }
+                   else if (currentString.Count(x => x == '.') < 1)
                     {
                         numberLabel.Content += ".";
                     }

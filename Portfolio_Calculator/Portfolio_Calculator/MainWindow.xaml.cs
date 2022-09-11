@@ -26,6 +26,13 @@ namespace Portfolio_Calculator
             timer();
 
             #region Proportionality relative to Screen
+            if (SystemParameters.PrimaryScreenWidth == 2560)
+            {
+                moon.HorizontalAlignment = HorizontalAlignment.Right;
+                moon.VerticalAlignment = VerticalAlignment.Center;
+                sun.HorizontalAlignment = HorizontalAlignment.Left;
+                sun.VerticalAlignment = VerticalAlignment.Center;
+            }
             double buttonSize = SystemParameters.PrimaryScreenWidth * 0.04; 
             GridLengthConverter myConverter = new GridLengthConverter(); 
             this.Height = SystemParameters.PrimaryScreenHeight * 0.82;

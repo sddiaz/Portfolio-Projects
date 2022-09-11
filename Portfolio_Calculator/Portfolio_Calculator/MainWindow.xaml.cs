@@ -30,8 +30,8 @@ namespace Portfolio_Calculator
             GridLengthConverter myConverter = new GridLengthConverter(); 
             this.Height = SystemParameters.PrimaryScreenHeight * 0.82;
             this.Width = SystemParameters.PrimaryScreenWidth * 0.22;
-            darkModeGrid.Height = SystemParameters.PrimaryScreenHeight * 0.02;
-            darkModeGrid.Width = SystemParameters.PrimaryScreenWidth * 0.03;
+            darkModeGrid.Height = SystemParameters.PrimaryScreenHeight * 0.03;
+            darkModeGrid.Width = SystemParameters.PrimaryScreenWidth * 0.035;
             this.mainGrid.RowDefinitions[0].Height = (GridLength)myConverter.ConvertFromString((SystemParameters.PrimaryScreenHeight * 0.32).ToString());
             this.mainGrid.RowDefinitions[1].Height = (GridLength)myConverter.ConvertFromString((SystemParameters.PrimaryScreenHeight * 0.47).ToString());
             #region Nightmare

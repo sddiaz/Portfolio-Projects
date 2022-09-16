@@ -9,7 +9,7 @@
             <Style x:Name="whiteStyle" TargetType="Button">
                 <Style.Resources>
                     <Style x:Name="bruh" TargetType="Border">
-                        <Setter Property="CornerRadius" Value="25" />
+                        <Setter Property="CornerRadius" Value="15" />
                         <Setter Property="Background" Value="White"/>
                     </Style>
                 </Style.Resources>

@@ -33,6 +33,12 @@ namespace Portfolio_Calculator
                 sun.HorizontalAlignment = HorizontalAlignment.Left;
                 sun.VerticalAlignment = VerticalAlignment.Center;
             }
+            else
+            {
+                divide.FontSize = 40;
+                plusMinus.FontSize = 30;
+                percent.FontSize = 30; 
+            }
             double buttonSize = SystemParameters.PrimaryScreenWidth * 0.04; 
             GridLengthConverter myConverter = new GridLengthConverter(); 
             this.Height = SystemParameters.PrimaryScreenHeight * 0.82;
@@ -41,7 +47,7 @@ namespace Portfolio_Calculator
             darkModeGrid.Width = SystemParameters.PrimaryScreenWidth * 0.035;
             this.mainGrid.RowDefinitions[0].Height = (GridLength)myConverter.ConvertFromString((SystemParameters.PrimaryScreenHeight * 0.32).ToString());
             this.mainGrid.RowDefinitions[1].Height = (GridLength)myConverter.ConvertFromString((SystemParameters.PrimaryScreenHeight * 0.47).ToString());
-            #region Nightmare
+            #region Mess.. will fix soon. 
             AC.Width = buttonSize;
             AC.Height = buttonSize;
             plusMinus.Width = buttonSize;
@@ -102,6 +108,7 @@ namespace Portfolio_Calculator
         #endregion
 
         #region Operators
+        // Clears content
         private void AC_Click(object sender, RoutedEventArgs e)
         {
             if (numberLabel.Content != null && numberLabel.Content.ToString() != string.Empty)
@@ -111,12 +118,9 @@ namespace Portfolio_Calculator
                 Operands.Clear();
                 operationCount = 0;
             }
-            else
-            {
-                MessageBox.Show("Nothing to clear.");
-            }
         }
 
+        // Changes sign
         private void plusMinus_Click(object sender, RoutedEventArgs e)
         {
             // If our expression isn't null (to start with). 
@@ -160,6 +164,7 @@ namespace Portfolio_Calculator
             }
         }
 
+        // Divides by 100
         private void percent_Click(object sender, RoutedEventArgs e)
         {
             if (numberLabel.Content != null && numberLabel.Content.ToString() != string.Empty)
@@ -181,6 +186,8 @@ namespace Portfolio_Calculator
                 MessageBox.Show("Please input a number first.");
             }
         }
+
+        // Spits out answer
         private void enter_Click(object sender, RoutedEventArgs e)
         {
             if (numberLabel.Content != null && numberLabel.Content.ToString() != string.Empty)
@@ -218,12 +225,13 @@ namespace Portfolio_Calculator
             }
         }
 
+
         private void operationClick(object sender, RoutedEventArgs e)
         {
             // Check to see if we have any numbers first. 
             if (numberLabel.Content == null || numberLabel.Content.ToString() == string.Empty)
             {
-                MessageBox.Show("Please input a number first"); 
+                MessageBox.Show("You need a number first"); 
             }
             else
             {
@@ -240,7 +248,7 @@ namespace Portfolio_Calculator
                     // If we have more than one operator, don't. 
                     if (operationCount > 0)
                     {
-                        MessageBox.Show("One operator at a time, please.");
+                        numberLabel.Content = numberLabel.Content.ToString().Replace(lastOperation, currentOperation); 
                     }
                     else
                     {
@@ -342,7 +350,7 @@ namespace Portfolio_Calculator
                 {
                    if (Operands.ElementAt(0).ToString().Contains("."))
                     {
-                        if (currentString.Count(x => x == '.') < 2)
+                        if (currentString.Count(x => x == '.') < 1)
                         {
                             numberLabel.Content += ".";
                         }

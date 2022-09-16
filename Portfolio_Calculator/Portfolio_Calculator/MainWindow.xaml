@@ -66,7 +66,7 @@
                             </EventTrigger>
                         </Button.Triggers>
                     </Button>
-                    <Button Click="percent_Click" x:Name="percent" Foreground="#72F2EB" Content="%" Grid.Column="2">
+                    <Button Click="percent_Click" FontSize="40" x:Name="percent" Foreground="#72F2EB" Content="%" Grid.Column="2">
                         <Button.Triggers>
                             <EventTrigger RoutedEvent="MouseEnter">
                                 <BeginStoryboard>

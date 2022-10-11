@@ -12,6 +12,6 @@ Inspiration -> https://dribbble.com/shots/14709020-Calculator
 **Clippit (in-progress)**: Clipboard web app. 
 Skills Utilized: **HTML, CSS, JavaScript, C#**  
 Details: 
-This application was a recommendation from a list of ideas for programmers I found online (though the source of which I can't recall). Essentially, the idea is to paste in your desired info on one device. Generate your code, enter the code on another device and retrieve your info back! This way, you don't need to email yourself, teams message yourself, etc, like alot of people do. It can be used from any device via a web browser. For all of my projects, I try to incorporate some added touch like animations or styling, to increase the pleasant user experience. 
+The idea of this application is to paste in your desired info on one device, generate your code, enter the code on another device and retrieve your info back! This way, you don't need to email yourself, Teams message yourself, etc, like many people often do. It can be used from any device via a web browser. For all of my projects, I try to incorporate some added touch like animations or styling, to increase the pleasant user experience. 
 **Not yet finished / Available for download ** 
 / -------------------- /  

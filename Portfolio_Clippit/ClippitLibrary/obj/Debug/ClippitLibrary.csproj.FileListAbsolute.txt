@@ -1,0 +1,6 @@
+C:\Users\sdiaz\Documents\GitHub\Portfolio-Projects\ClippitLibrary\bin\Debug\ClippitLibrary.dll
+C:\Users\sdiaz\Documents\GitHub\Portfolio-Projects\ClippitLibrary\bin\Debug\ClippitLibrary.pdb
+C:\Users\sdiaz\Documents\GitHub\Portfolio-Projects\ClippitLibrary\obj\Debug\ClippitLibrary.csproj.AssemblyReference.cache
+C:\Users\sdiaz\Documents\GitHub\Portfolio-Projects\ClippitLibrary\obj\Debug\ClippitLibrary.csproj.CoreCompileInputs.cache
+C:\Users\sdiaz\Documents\GitHub\Portfolio-Projects\ClippitLibrary\obj\Debug\ClippitLibrary.dll
+C:\Users\sdiaz\Documents\GitHub\Portfolio-Projects\ClippitLibrary\obj\Debug\ClippitLibrary.pdb

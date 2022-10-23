@@ -3,11 +3,16 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <style>
         .codeSection {
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
             margin-top: 30px; 
         }
         textarea {
             resize: none; 
-            overflow: hidden; 
+            overflow: hidden;
+            font-family: Arial 'Arial Rounded MT'; 
+            font-weight: bold; 
         }
         .codeEntry {
             display: inline; 
@@ -31,15 +36,11 @@
         .input {
             font-family: Arial;
         }
-        .codeLabel {
-             margin-left: 5px; 
-             padding: 15px;
-             border-radius: 25px;
-             background-color: #ff5455;
-             border-color: white;
-             color: white;
-             font-family: 'Arial Rounded MT';
-             font-weight: bold; 
+        .codeLabel { 
+            font-family: Arial 'Arial Rounded MT'; 
+            font-weight: bold; 
+            font-size: 20px; 
+            margin-left: 10px; 
         }
         .Textbox {
             min-width:100%;
@@ -49,15 +50,17 @@
             display: flex; 
             align-items: center;
             justify-content: center; 
+
         }
-        .form {
+        .pasteBoxClass { 
+         font-family: Arial; 
         }
     </style>
     <form novalidate runat="server">
     <header class="title">
         Clippit
     </header>
-        <div runat="server" class="alignTextBoxes">
+        <div style="font-family: Arial Rounded MT;" runat="server" class="alignTextBoxes">
             <asp:TextBox onfocus="this.value=''" Text="◦ Enter Your Text &#10;◦ Generate Code &#10;◦ Paste Code and Retrieve Your Text!" Wrap="true" TextMode="MultiLine" runat="server" id="copyBox" contenteditable="true" CssClass="pasteBoxClass">
                 </asp:TextBox>
         </div>
@@ -90,7 +93,7 @@
         </div>
     </div>
         <div runat="server" class="alignTextBoxes">
-    <asp:TextBox Wrap="true" TextMode="MultiLine" runat="server" id="pasteBox" contenteditable="true" data-text="Copy Stuff Here" CssClass="pasteBoxClass">
+    <asp:TextBox style="font-family: Arial Rounded MT;" Wrap="true" TextMode="MultiLine" runat="server" id="pasteBox" contenteditable="true" data-text="Copy Stuff Here" CssClass="pasteBoxClass">
     </asp:TextBox>
             </div>
         </form>

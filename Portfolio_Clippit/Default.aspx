@@ -2,6 +2,9 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <style>
+        .codeSection {
+            margin-top: 30px; 
+        }
         textarea {
             resize: none; 
             overflow: hidden; 
@@ -29,7 +32,6 @@
             font-family: Arial;
         }
         .codeLabel {
-             margin-top: 30px;
              margin-left: 5px; 
              padding: 15px;
              border-radius: 25px;
@@ -47,6 +49,8 @@
             display: flex; 
             align-items: center;
             justify-content: center; 
+        }
+        .form {
         }
     </style>
     <form novalidate runat="server">

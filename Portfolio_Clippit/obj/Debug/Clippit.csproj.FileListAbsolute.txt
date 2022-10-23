@@ -141,3 +141,5 @@ C:\Users\salty\OneDrive\Documents\GitHub\Portfolio-Projects\Portfolio_Clippit\bi
 C:\Users\salty\OneDrive\Documents\GitHub\Portfolio-Projects\Portfolio_Clippit\bin\ru\Microsoft.Data.SqlClient.resources.dll
 C:\Users\salty\OneDrive\Documents\GitHub\Portfolio-Projects\Portfolio_Clippit\bin\zh-Hans\Microsoft.Data.SqlClient.resources.dll
 C:\Users\salty\OneDrive\Documents\GitHub\Portfolio-Projects\Portfolio_Clippit\bin\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\salty\OneDrive\Documents\GitHub\Portfolio-Projects\Portfolio_Clippit\bin\UserLibrary.dll
+C:\Users\salty\OneDrive\Documents\GitHub\Portfolio-Projects\Portfolio_Clippit\bin\UserLibrary.pdb

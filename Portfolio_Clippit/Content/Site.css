@@ -32,7 +32,11 @@ body {
 }
 
 .codeGenerator {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
     margin-top: 30px;
+    margin: 0 auto; 
     padding: 10px;
     border-radius: 25px;
     background-color: #ff5455;
@@ -50,10 +54,28 @@ body {
         color: white;
     }
 
+.codeEntry {
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: #ff5455;
+    border-color: white;
+    color: white;
+    font-family: Cocogoose;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 10px;
+}
+
+    .codeEntry:hover {
+        background-color: #cc4344;
+        transform: scale(1.1);
+        color: white;
+    }
+
 .pasteBoxClass {
     display: flex;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 25px; 
     margin-bottom: 30px;
     margin-top: 10px;
     margin: 0 auto;
@@ -65,11 +87,8 @@ body {
     font-weight: bold;
     height: 300px;
     width: 1000px;
-    text-align: center;
-    vertical-align: middle;
     transition: 0.2s;
-    overflow: scroll;
-    white-space: nowrap;
+    overflow: hidden;
     box-shadow: 7px 10px rgba(0, 0, 0, 0.2);
 }
 

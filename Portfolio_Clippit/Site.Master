@@ -3,18 +3,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head runat="server">
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="~/Images/copy_paste_documents_files_icon_178877.ico" />
     <title>Clippit - Online Clipboard</title>
-
+    <link rel="shortcut icon" type="image/x-icon" href="Images/copy_paste_documents_files_icon_178877.ico" />
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/bundles/modernizr") %>
     </asp:PlaceHolder>
-
     <webopt:bundlereference runat="server" path="~/Content/css" />
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-
 </head>
 <body>
         <div class="container body-content">
@@ -32,7 +28,7 @@
                     <img class="logo" src="Images/GitHub-Mark-Light-32px.png" />
                 </a>
             </span>
-            <p style="font-size: 20px; font-family: Ametuer; color: white; "><%: DateTime.Now.Year %> - Made with ♡ by Santiago Diaz </p>
+            <p style="font-size: 20px; font-family: Ametuer; color: white; "><%: DateTime.Now.Year %> - Built with ♡ by SD </p>
         </footer>
         </div>
 </body>

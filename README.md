@@ -30,7 +30,7 @@ The infamous calculator project. Simple, small, but what I believe to be just hu
 
 ## **Skills Utilized: Microsoft SQL, HTML, CSS, C#**  
 Details:   
-The idea of this application is to paste in your desired info on one device, generate your code, enter the code on another device and retrieve your info back! This way, you don't need to email yourself, Teams message yourself, etc, like many people often do. It can be used from any device via a web browser. The goal here was to implement a database, and make the UI look appealing (albeit simple) as well!   
+The idea of this application web-based message retrieval. It can be used from any device via a web browser. The goal here was to implement a database, and make the UI look appealing (albeit simple) as well! Once again, small and simple, with greater things to come.    
 ## **[Visit Here!](http://clippit.somee.com/)**  
 <hr>
 

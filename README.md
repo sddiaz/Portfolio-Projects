@@ -3,7 +3,10 @@ A series of in-progress personal projects I've done for fun:
 
 / -------------------- /  
 ## **Calculator**:  
-![Calculator](C:\Users\salty\OneDrive\Desktop\Programming\Portfolio\Images\Calculator\Image 1.png raw=true "Title")
+![Calculator Img 1](https://user-images.githubusercontent.com/101738608/197716595-29a3c9fe-ef55-44b0-b27d-e248e2e3325e.png)
+![Calculator Img 2](https://user-images.githubusercontent.com/101738608/197716633-2f36c5f1-4e3f-4595-8715-f136086fa306.png)  
+
+salty\OneDrive\Desktop\Programming\Portfolio\Images\Calculator\Image 1.png raw=true "Title")
 Skills Utilized: **C#, XAML**  
 Details:  
 For this app, I followed no online step-by-step tutorials on design, logic etc. This is solely from scratch. My first real project, and first time designing a UI 

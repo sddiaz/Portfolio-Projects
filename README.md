@@ -27,13 +27,14 @@ For this app, I followed no online step-by-step tutorials on design, logic etc. 
 <img src="https://user-images.githubusercontent.com/101738608/197719421-a2647341-fe8b-4753-b377-5989eec35c6c.png" width="500">
 
 
-## **Skills Utilized: Microsoft SQL, HTML, CSS, JavaScript, C#**  
+## **Skills Utilized: Microsoft SQL, HTML, CSS, C#**  
 Details:   
 The idea of this application is to paste in your desired info on one device, generate your code, enter the code on another device and retrieve your info back! This way, you don't need to email yourself, Teams message yourself, etc, like many people often do. It can be used from any device via a web browser. The goal here was to implement a database, and make the UI look appealing (albeit simple) as well!   
 ## **[Visit Here!](http://clippit.somee.com/)**  
 <hr>
 
-## **Passified: Password Generator (in progress)** 
+## **Passified: Password Generator web app (in progress)**  
+## **Skills Utilized: HTML, CSS, JavaScript**  
 Details:  
 This simple password generator is nothing that hasn't been done a thousand times, so my goal is to make the UI experience the focal point. Plenty of moving parts and things that are nice to look at. I'll also include links to the top 10 password storage / management systems so the user has quick access.   
 <hr>

@@ -1,5 +1,5 @@
 # Portfolio-Projects
-A series of in-progress personal projects I've done for fun:  
+A series of in-progress personal projects I've done for fun:    
 / -------------------- /  
 ## **Calculator**:  
 Skills Utilized: **C#, XAML**  

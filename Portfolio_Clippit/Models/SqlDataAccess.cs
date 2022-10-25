@@ -12,7 +12,7 @@ namespace DataAccess
 {
     public static class SqlDataAccess
     {
-        public static string GetConnectionString(string connectionName = "UserDB")
+        public static string GetConnectionString(string connectionName = "UserDatabase")
         {
             return ConfigurationManager.ConnectionStrings[connectionName].ConnectionString; 
         }

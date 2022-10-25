@@ -93,6 +93,7 @@ namespace Portfolio_Calculator
         }
 
         #region Timer
+        // This is the clock in the top left of the design
         public void timer()
         {
             DispatcherTimer timer = new DispatcherTimer();
@@ -111,6 +112,7 @@ namespace Portfolio_Calculator
         // Clears content
         private void AC_Click(object sender, RoutedEventArgs e)
         {
+        // If there is any content.. go ahead and clear it. This includes variables too. 
             if (numberLabel.Content != null && numberLabel.Content.ToString() != string.Empty)
             {
                 // Clear entries, reset operator count. 
@@ -126,21 +128,28 @@ namespace Portfolio_Calculator
             // If our expression isn't null (to start with). 
             if (numberLabel.Content != null && numberLabel.Content.ToString() != string.Empty)
             {
-                string currentString = numberLabel.Content.ToString(); // Easier on the eyes. 
+            // Grab the string we are looking at 
+                string currentString = numberLabel.Content.ToString(); // Easier on the eyes.
+                // If there is an operand already, we'll need another operand for which to change it's sign. 
                 if (Operands.Count == 1 && currentString[currentString.Count() - 1] == ' ')
                     {
                         MessageBox.Show("Please input a number first.");
                     }
+                    // If there is already a negative sign.. 
                     else if (currentString.ElementAt(0) != '-')
                     {
+                    // If there is only 1 number
                         if (Operands.Count == 0)
                         {
+                        // Flip the sign of the first number. 
                             numberLabel.Content = currentString.Insert(0, "-");
                         }
+                        // else if there is 2 numbers, flip the sign of the second. 
                         else if (Operands.Count == 1 && currentOperation != null)
                         {
                             flip2ndSign(); 
                         }
+                        // Don't just flip the sign text-wise, but change the integer value of the number to negative. 
                         else if (Operands.Count == 1)
                         {
                             Operands[0] = Operands[0] * -1;
@@ -148,10 +157,12 @@ namespace Portfolio_Calculator
                     }
                     else
                     {
+                    // If there is already a negative sign, and only 1 number, remove the negative sign. 
                         if (Operands.Count == 0)
                         {
                             numberLabel.Content = currentString.Replace("-", "");
                         }
+                   // If there is already a negative sign, and 2 numbers, remove the negative sign from the second operand. 
                         else
                         {
                             flip2ndSign();
@@ -167,14 +178,15 @@ namespace Portfolio_Calculator
         // Divides by 100
         private void percent_Click(object sender, RoutedEventArgs e)
         {
+        // If there's numbers on the screen.. do the following
             if (numberLabel.Content != null && numberLabel.Content.ToString() != string.Empty)
             {
                 // If we're dealing with two numbers at once, divive the last one. 
                 if (Operands.Count > 0)
                 {
                     numberLabel.Content = Operands.ElementAt(Operands.Count - 1) / 100;
-
                 }
+                // Else simply divide the first one
                 else
                 {
                     numberLabel.Content = Decimal.Parse(numberLabel.Content.ToString()) / 100;
@@ -190,10 +202,13 @@ namespace Portfolio_Calculator
         // Spits out answer
         private void enter_Click(object sender, RoutedEventArgs e)
         {
+        // Make sure we have something to work with. 
             if (numberLabel.Content != null && numberLabel.Content.ToString() != string.Empty)
             {
                 try
                 {
+                // Read the text on the screen, we should have two numbers (operands) and an operation sign. 
+                // Perform a calculation based on the data we have, and clear our current statement / operands / operation. Then display the answer above the main line. 
                     var currentString = numberLabel.Content.ToString();
                     Decimal secondNumber = Decimal.Parse(currentString.Substring(currentString.LastIndexOf(' ') + 1));
                     // Everything after the LAST space will be our next number.
@@ -213,11 +228,13 @@ namespace Portfolio_Calculator
                     operationCount = 0;
                     expressionCount++;
                 }
+                // Not enough operands (need 2)
                 catch
                 {
                     MessageBox.Show("You need two operands to perform an operation.");
                 }
             }
+                // Not enough operands (need 2)
             else
             {
                 MessageBox.Show("You need two operands to perform an operation.");
@@ -225,7 +242,8 @@ namespace Portfolio_Calculator
             }
         }
 
-
+        // We need at least one number before we can click the operation button. 
+        // All we are doing here is parsing the string to find the operation, and saving that operation as a string. 
         private void operationClick(object sender, RoutedEventArgs e)
         {
             // Check to see if we have any numbers first. 
@@ -245,7 +263,7 @@ namespace Portfolio_Calculator
                 // Otherwise, add the last number to our list. 
                 else
                 {
-                    // If we have more than one operator, don't. 
+                    // If we have more than one operator, replace it (we can only have one).
                     if (operationCount > 0)
                     {
                         numberLabel.Content = numberLabel.Content.ToString().Replace(lastOperation, currentOperation); 
@@ -267,7 +285,7 @@ namespace Portfolio_Calculator
                 operationCount++;
             }
         }
-
+        // This is the easy part, take our current operands and operation and perform the calculation. 
         public string performCalculation(Decimal firstNumber, Decimal secondNumber, string operation)
         {
             // Initialize our answer variable. 
@@ -291,7 +309,7 @@ namespace Portfolio_Calculator
             previousAnswers.Add(answer); 
             return answer.ToString();
         }
-
+        // Function to flip the sign of the second operand. 
         public void flip2ndSign()
         {
             string currentString = numberLabel.Content.ToString(); // Easier on the eyes. 
@@ -331,7 +349,7 @@ namespace Portfolio_Calculator
         #endregion
 
         #region Numpad
-
+        // Add whatever was clicked to our current expression (when applicable)
         private void NumPad_Click(object sender, RoutedEventArgs e)
         {
             numberLabel.Content += sender.ToString()[sender.ToString().Length - 1].ToString();

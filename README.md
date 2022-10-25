@@ -14,7 +14,7 @@ A series of in-progress personal projects I've done to increase my knowledge of 
   </body>
 </html>
 
-## **Skills Utilized: C#, XAML(WPF)**  
+## **Skills Utilized: C#, XAML, WPF**  
 Details:  
 For this app, I followed no online step-by-step tutorials on design, logic etc. This is solely from scratch. My first real project, and first time designing a UI 
 based on a static illustration (bringing it to life.. per se).  

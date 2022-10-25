@@ -13,5 +13,5 @@ Inspiration -> https://dribbble.com/shots/14709020-Calculator
 Skills Utilized: **HTML, CSS, JavaScript, C#**  
 Details: 
 The idea of this application is to paste in your desired info on one device, generate your code, enter the code on another device and retrieve your info back! This way, you don't need to email yourself, Teams message yourself, etc, like many people often do. It can be used from any device via a web browser. For all of my projects, I try to incorporate some added touch like animations or styling, to increase the pleasant user experience. 
-**Visit Here -> http://clippit.somee.com/ ** 
+**Visit Here -> http://clippit.somee.com/ **   
 / -------------------- /  

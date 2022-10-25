@@ -1,4 +1,5 @@
-# Portfolio-Projects (portfolio website coming soon!)
+# Portfolio-Projects
+(A personal portfolio website will be up once I have 5-10 projects finished) 
 A series of in-progress _personal_ projects I've done to increase my knowledge of software development.  
 (Many more work-related projects have been completed, these are solely the personal ones).   
 <hr>

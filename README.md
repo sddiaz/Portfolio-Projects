@@ -31,7 +31,8 @@ For this app, I followed no online step-by-step tutorials on design, logic etc. 
 Details:   
 The idea of this application is to paste in your desired info on one device, generate your code, enter the code on another device and retrieve your info back! This way, you don't need to email yourself, Teams message yourself, etc, like many people often do. It can be used from any device via a web browser. The goal here was to implement a database, and make the UI look appealing (albeit simple) as well!   
 ## **[Visit Here!](http://clippit.somee.com/)**  
-<hr>  
+<hr>
+
 ## Passified: Passowrd Generator (in progress)  
 Details:  
 This simple password generator is nothing that hasn't been done a thousand times, so my goal is to make the UI experience the focal point. Plenty of moving parts and things that are nice to look at. I'll also include links to the top 10 password storage / management systems so the user has quick access.   

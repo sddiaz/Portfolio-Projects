@@ -36,7 +36,7 @@ The idea of this application is to paste in your desired info on one device, gen
 ## **Passified: Password Generator web app (in progress)**  
 ## **Skills Utilized: HTML, CSS, JavaScript**  
 Details:  
-This simple password generator is nothing that hasn't been done a thousand times, so my goal is to make the UI experience the focal point. Plenty of moving parts and things that are nice to look at. I'll also include links to the top 10 password storage / management systems so the user has quick access.   
+This simple password generator is nothing that hasn't been done a thousand times, so my goal is to make the UI experience the focal point. Plenty of moving parts and things that are nice to look at. I'll also include links to the top password storage / management systems so the user has some quick tools for their new password.   
 <hr>
 
 

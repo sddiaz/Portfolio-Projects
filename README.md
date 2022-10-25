@@ -1,6 +1,6 @@
 # Portfolio-Projects
-A series of in-progress personal projects I've done to increase my knowledge of software development:
-(many more work-related projects have been completed, these are solely the personal ones). 
+A series of in-progress personal projects I've done to increase my knowledge of software development.  
+(Many more work-related projects have been completed, these are solely the personal ones).   
 <hr>
 
 ## **Calculator**: 

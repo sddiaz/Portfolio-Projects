@@ -1,0 +1,1 @@
+console.log(fetch('https://icanhazdadjoke.com/')) 

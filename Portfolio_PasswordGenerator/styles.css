@@ -1,0 +1,55 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(fonts/SATOSHI-BLACK.OTF);
+}
+body {
+    background: #f2f6f9;
+}
+.title {
+    display: inline;
+    padding: 10px;
+    color: #373f66;
+    font-family: myFirstFont;
+    font-size: 75px;
+    padding-top: 0px;
+    width: 100%;
+}
+.title.box {
+    border-radius: 15px;
+    margin-left: 15px;
+    color: white;
+    background: #8b82ff;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.mainSection {
+    margin-top: 150px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px;
+    background: #8b82ff;
+    width: 400px;
+    height: 700px;
+}
+.bottomText {
+    display: inline;
+    font-size: 30px;
+    font-family: myFirstFont;
+    color: black;
+}
+.bottomText.heart {
+    color: #8b82ff;
+}
+.footerClass {
+    padding-top: 160px;
+    width: 100%;
+}
+.logo {
+    height: 30px;
+    float: right;
+    margin-right: 10px;
+}

@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <script src="scripts.js"></script>
+    <script
+      src="https://kit.fontawesome.com/8da304837c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Password Generator</title>
   </head>
   <body>
     <div class="title">
@@ -13,12 +18,105 @@
       <div class="title box">Generator</div>
     </div>
     <div class="container">
-      <div class="mainSection">
-        Generator, filter by upper, lower, unique characters, emojis, etc add
-        reverse option maybe? add copy to clip board, add lock svg, some form of
-        strength counter animation (for every 5 letters increment? (till 15)).
+      <div style="overflow: auto" class="mainSection">
+        <h1 class="passwordTitle">
+          Grab your
+          <span class="passwordTitle secondary">Password</span>
+        </h1>
+        <div class="passwordAndCopy">
+          <input class="passwordBox" type="text" id="password" />
+          <div style="margin-top: 10px; margin-bottom: 10px">
+            <button
+              title="Paste to Clipboard"
+              class="passIcons"
+              onclick="copyToClipboard()"
+            >
+              <i style="color: white" class="fa-2x fa-solid fa-clipboard"></i>
+            </button>
+            <button title="Give me another one!" class="passIcons">
+              <i style="color: white" class="fa-2x fa-solid fa-refresh"></i>
+            </button>
+          </div>
+          <hr style="width: 50%; border: 1px solid #8b82ff" />
+          <h1 class="passwordTitle">
+            <span class="passwordTitle secondary">Customize</span> your settings
+          </h1>
+        </div>
+        <div class="settings">
+          <label id="firstCheckbox" style="margin-bottom: 35px">
+            <!-- Uppercase label -->
+            <span class="spanContainer">
+              <span class="firstSetting">U</span>
+              <span class="firstSetting">P</span>
+              <span class="firstSetting">P</span>
+              <span class="firstSetting">E</span>
+              <span class="firstSetting">R</span>
+              <span class="firstSetting">C</span>
+              <span class="firstSetting">A</span>
+              <span class="firstSetting">S</span>
+              <span class="firstSetting">E</span>
+            </span>
+            <label class="switch">
+              <input type="checkbox" id="upperCase" />
+              <span class="slider"></span>
+            </label>
+          </label>
+          <label id="secondCheckbox" style="margin-bottom: 35px">
+            <!-- Lowercase label -->
+            <span class="spanContainer">
+              <span class="secondSetting">l</span>
+              <span class="secondSetting">o</span>
+              <span class="secondSetting">w</span>
+              <span class="secondSetting">e</span>
+              <span class="secondSetting">r</span>
+              <span class="secondSetting">c</span>
+              <span class="secondSetting">a</span>
+              <span class="secondSetting">s</span>
+              <span class="secondSetting">e</span>
+            </span>
+            <label class="switch">
+              <input type="checkbox" id="lowerCase" />
+              <span class="slider"></span>
+            </label>
+          </label>
+          <label id="thirdCheckbox" style="margin-bottom: 35px">
+            <!-- Symbols label -->
+            <span class="spanContainer">
+              <span class="thirdSetting">$</span>
+              <span class="thirdSetting">y</span>
+              <span class="thirdSetting">m</span>
+              <span class="thirdSetting">b</span>
+              <span class="thirdSetting">o</span>
+              <span class="thirdSetting">l</span>
+              <span class="thirdSetting">s</span>
+            </span>
+            <label class="switch">
+              <input type="checkbox" id="symbols" />
+              <span class="slider"></span>
+            </label>
+          </label>
+          <label id="fourthCheckbox" style="margin-bottom: 35px">
+            <!-- Numbers label -->
+            <span class="spanContainer">
+              <span class="fourthSetting">N</span>
+              <span class="fourthSetting">u</span>
+              <span class="fourthSetting">m</span>
+              <span class="fourthSetting">b</span>
+              <span class="fourthSetting">3</span>
+              <span class="fourthSetting">r</span>
+              <span class="fourthSetting">s</span>
+            </span>
+            <label class="switch">
+              <input type="checkbox" id="numbers" />
+              <span class="slider"></span>
+            </label>
+          </label>
+        </div>
       </div>
-      <div class="mainSection left">
+      <div
+        style="background: transparent; float: right; margin-left: 10px"
+        class="mainSection"
+      >
         Second Div, recommendations, (tweet if you used this! api maybe), as an
         added bonus, add (it would take x guesses to guess your password, or
         (there is a one in x chance your pass will be randomly guessed.).)

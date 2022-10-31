@@ -32,9 +32,34 @@ body {
     color: white;
     background: #8b82ff;
 }
+.alertArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.alertMessage {
+    visibility: hidden;
+    display: flex;
+    position: absolute;
+    width: fit-content;
+    color: #f2f6f9;
+    padding: 10px; 
+    border-radius: 15px;
+    background: #DC1433;
+    text-align: center;
+    font-family: myFirstFont;
+    font-size: 25px;
+    z-index: 99;
+    cursor: pointer;
+}
+.closeBtn {
+    visibility: collapse;
+    display: inline-block;
+    margin-left: 10px;
+    color: black;
+}
 .container {
     display: flex;
-    overflow: hiddne;;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -62,6 +87,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
 }
+
 /* Inside each container */
 .passwordBox {
     padding: 10px;
@@ -81,6 +107,29 @@ body {
 .passwordBox:focus, input:focus{
     outline: none;
 }
+.generateBtn {
+    background: #373f66;
+    height: 50px;
+    width: fit-content;
+    border-radius: 15px;
+    border-width: 0px;
+    border-bottom: 6px solid #8b82ff;
+    transition: 0.2s;
+    color: white;
+    font-family: myFirstFont;
+    font-size: 25px;
+    cursor: pointer;
+}
+.generateBtn:hover {
+    transform: scale(1.05);
+    margin-right: 10px;
+    color: white; 
+    background: #4f4a91;
+}
+.generateBtn:active {
+    margin-top: 5px;
+    border-bottom-width: 0px;
+}
 .passIcons {
     background: #373f66;
     vertical-align: top;
@@ -90,13 +139,18 @@ body {
     border-width: 0px;
     border-bottom: 6px solid #8b82ff;
     transition: 0.2s;
+    cursor: pointer;
+}
+.passIcons:hover {
+    background: #4f4a91;
+    transform: scale(1.05);
 }
 .passIcons:active {
     margin-top: 5px;
     border-bottom-width: 0px;
 }
 .settings {
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex; 
     flex-direction: column;
     flex-wrap: wrap;
@@ -176,7 +230,7 @@ input:checked + .slider:before {
 }
 
 
-/* Setting Labels */
+/* Settings Labels */
 .firstSetting {
     font-size: 35px; 
     transition: 0.3s; 
@@ -219,20 +273,31 @@ input:checked + .slider:before {
 }
 
 /* Range Slider */
-.lengthSelector {
-    --webkit-appearance: none;
-    margin-top: 30px;
-    display: flex; 
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    font-family: myFirstFont;
+.range {
+    margin-bottom: 25px;
+    display: inline-block;
+    color: #8b82ff; 
 }
-
-
-
-
-
+#sliderInput {
+  vertical-align: middle;
+  border: solid 1px #a6a6bd;
+  border-radius: 8px;
+  height: 7px;
+  outline: none;
+  -webkit-appearance: none;
+}
+#sliderInput::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    color: #8b82ff; 
+    height: 20px; 
+    width: 20px;
+    background-color: #8b82ff; 
+    border-radius: 50%; 
+}
+#sliderInput::-moz-range-progress {
+    background: #8b82ff;
+    fill: 100%;
+}
 
 
 

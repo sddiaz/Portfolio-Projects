@@ -1,15 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="scripts.js"></script>
-    <script
-      src="https://kit.fontawesome.com/8da304837c.js"
-      crossorigin="anonymous"
-    ></script>
     <title>Password Generator</title>
   </head>
   <body>
@@ -18,14 +13,30 @@
       <div class="title box">Generator</div>
     </div>
     <div class="container">
-      <div style="overflow: auto" class="mainSection">
+      <div class="mainSection">
+        <div class="alertArea">
+          <div id="alertMessage" class="alertMessage">
+            <span>You need at least one selection</span>
+            <span id="closeBtn" class="closeBtn" onclick="closeAlert(this);"
+              >&times;</span
+            >
+          </div>
+        </div>
         <h1 class="passwordTitle">
           Grab your
           <span class="passwordTitle secondary">Password</span>
         </h1>
         <div class="passwordAndCopy">
-          <input class="passwordBox" type="text" id="password" />
+          <input class="passwordBox" type="text" id="passwordBox" />
           <div style="margin-top: 10px; margin-bottom: 10px">
+            <button
+              type="submit"
+              title="Generate Password!"
+              class="generateBtn"
+              onclick="generateClick()"
+            >
+              Generate!
+            </button>
             <button
               title="Paste to Clipboard"
               class="passIcons"
@@ -33,11 +44,15 @@
             >
               <i style="color: white" class="fa-2x fa-solid fa-clipboard"></i>
             </button>
-            <button title="Give me another one!" class="passIcons">
+            <button
+              title="Reverse Reverse!"
+              class="passIcons"
+              onclick="reversePass()"
+            >
               <i style="color: white" class="fa-2x fa-solid fa-refresh"></i>
             </button>
           </div>
-          <hr style="width: 50%; border: 1px solid #8b82ff" />
+          <hr style="margin-top: 15px; width: 50%; border: 1px solid #8b82ff" />
           <h1 class="passwordTitle">
             <span class="passwordTitle secondary">Customize</span> your settings
           </h1>
@@ -47,24 +62,28 @@
             <!-- Uppercase label -->
             <span class="spanContainer">
               <span class="firstSetting">U</span>
-              <span class="firstSetting">P</span>
-              <span class="firstSetting">P</span>
-              <span class="firstSetting">E</span>
-              <span class="firstSetting">R</span>
-              <span class="firstSetting">C</span>
-              <span class="firstSetting">A</span>
-              <span class="firstSetting">S</span>
-              <span class="firstSetting">E</span>
+              <span class="firstSetting">p</span>
+              <span class="firstSetting">p</span>
+              <span class="firstSetting">e</span>
+              <span class="firstSetting">r</span>
+              <span class="firstSetting">c</span>
+              <span class="firstSetting">a</span>
+              <span class="firstSetting">s</span>
+              <span class="firstSetting">e</span>
             </span>
             <label class="switch">
-              <input type="checkbox" id="upperCase" />
+              <input
+                onchange="checkInputs(this)"
+                type="checkbox"
+                id="upperCase"
+              />
               <span class="slider"></span>
             </label>
           </label>
           <label id="secondCheckbox" style="margin-bottom: 35px">
             <!-- Lowercase label -->
             <span class="spanContainer">
-              <span class="secondSetting">l</span>
+              <span class="secondSetting">L</span>
               <span class="secondSetting">o</span>
               <span class="secondSetting">w</span>
               <span class="secondSetting">e</span>
@@ -75,14 +94,19 @@
               <span class="secondSetting">e</span>
             </span>
             <label class="switch">
-              <input type="checkbox" id="lowerCase" />
+              <input
+                onchange="checkInputs(this)"
+                type="checkbox"
+                id="lowerCase"
+                checked
+              />
               <span class="slider"></span>
             </label>
           </label>
           <label id="thirdCheckbox" style="margin-bottom: 35px">
             <!-- Symbols label -->
             <span class="spanContainer">
-              <span class="thirdSetting">$</span>
+              <span class="thirdSetting">S</span>
               <span class="thirdSetting">y</span>
               <span class="thirdSetting">m</span>
               <span class="thirdSetting">b</span>
@@ -91,7 +115,11 @@
               <span class="thirdSetting">s</span>
             </span>
             <label class="switch">
-              <input type="checkbox" id="symbols" />
+              <input
+                onchange="checkInputs(this)"
+                type="checkbox"
+                id="symbols"
+              />
               <span class="slider"></span>
             </label>
           </label>
@@ -102,16 +130,49 @@
               <span class="fourthSetting">u</span>
               <span class="fourthSetting">m</span>
               <span class="fourthSetting">b</span>
-              <span class="fourthSetting">3</span>
+              <span class="fourthSetting">e</span>
               <span class="fourthSetting">r</span>
               <span class="fourthSetting">s</span>
             </span>
             <label class="switch">
-              <input type="checkbox" id="numbers" />
+              <input
+                onchange="checkInputs(this)"
+                type="checkbox"
+                id="numbers"
+              />
               <span class="slider"></span>
             </label>
           </label>
+          <label class="passLength" id="passLength">
+            <!-- Length label -->
+            <span class="spanContainer">
+              <span class="firstSetting">L</span>
+              <span class="firstSetting">e</span>
+              <span class="firstSetting">n</span>
+              <span class="firstSetting">g</span>
+              <span class="firstSetting">t</span>
+              <span class="firstSetting">h</span>
+            </span>
+            <!-- Length slider -->
+            <div class="range">
+              <span class="field">
+                <input
+                  class="sliderInput"
+                  id="sliderInput"
+                  type="range"
+                  min="1"
+                  max="128"
+                  value="8"
+                  step="1"
+                />
+              </span>
+              <span class="sliderValue">
+                <span id="sliderValue">8</span>
+              </span>
+            </div>
+          </label>
         </div>
+        <hr style="width: 50%; border: 1px solid #8b82ff" />
       </div>
       <div
         style="background: transparent; float: right; margin-left: 10px"
@@ -139,4 +200,9 @@
       </p>
     </div>
   </body>
+  <script src="scripts.js"></script>
+  <script
+    src="https://kit.fontawesome.com/8da304837c.js"
+    crossorigin="anonymous"
+  ></script>
 </html>

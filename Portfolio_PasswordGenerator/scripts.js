@@ -11,23 +11,31 @@ const symbolCodes = symbolCodes1.concat(symbolCodes2);
 const numberCodes = getAvailableCharacters(48, 57); 
 var possibleCharacters;
 
+
+
+
+
+  
 sliderInput.oninput = (() => {
   let value = sliderInput.value; 
   sliderValue.textContent = value; 
   sliderValue.style.left = (value/2) + "%"
 });
+
+
+// Strength Checker Variables 
+let progressCircle = document.querySelector('.progress');
+let radius = progressCircle.r.baseVal.value;
+let circumference = 2 * Math.PI * radius; 
+progressCircle.style.strokeDasharray = circumference;
+// Strength Checker Function
 function strengthChecker() {
-  let value = sliderInput.value;
-  if (value < 10) {
-    alert('bruh1');
-  } 
-  else if (value > 10 && value < 15) {
-    alert('bruh2');
-  } 
-  else if (value > 15) {
-    alert('bruh3');
-  }
-  
+  let charCount = passwordBox.value.length;
+  setProgress(charCount);
+}
+function setProgress(charCount) {
+  progressCircle.style.strokeDashoffest = circumference - (charCount / 100) * circumference;
+  console.log(circumference);
 }
 //#region Second Section
 const carousel = document.querySelector('.carousel');

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html style="min-height: 100%" lang="en">
   <head>
     <meta charset="UTF" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Password Generator</title>
   </head>
-  <body>
+  <body style="min-height: 100%">
     <div class="title">
       Password
       <div class="title box">Generator</div>
@@ -27,7 +27,12 @@
           <span class="passwordTitle secondary">Password</span>
         </h1>
         <div class="passwordAndCopy">
-          <input class="passwordBox" type="text" id="passwordBox" />
+          <input
+            oninput="strengthChecker()"
+            class="passwordBox"
+            type="text"
+            id="passwordBox"
+          />
           <div style="margin-top: 10px; margin-bottom: 10px">
             <button
               type="submit"
@@ -183,57 +188,92 @@
             <div class="carouselSlider">
               <!-- Bitwarden -->
               <section>
-                <a href="https://bitwarden.com/" target="_blank">
-                  <img
-                    class="managers"
-                    src="Images/bitwarden-icon-256x256-pvtcmom9.png"
-                  />
-                </a>
+                <div>
+                  <div class="sectionTitle">Bitwarden</div>
+                  <div>
+                    <a href="https://bitwarden.com/" target="_blank">
+                      <img
+                        class="managers"
+                        src="Images/bitwarden-icon-256x256-pvtcmom9.png"
+                      />
+                    </a>
+                  </div>
+                </div>
               </section>
               <!-- LastPass -->
               <section>
-                <a href="https://www.lastpass.com/" target="_blank">
-                  <img class="managers" src="Images/images.png" />
-                </a>
+                <div>
+                  <div class="sectionTitle">LastPass</div>
+                  <div>
+                    <a href="https://www.lastpass.com/" target="_blank">
+                      <img class="managers" src="Images/images.png" />
+                    </a>
+                  </div>
+                </div>
               </section>
               <!-- 1password -->
               <section>
-                <a href="https://1password.com/" target="_blank">
-                  <img
-                    class="managers"
-                    src="Images/png-clipart-computer-icons-encapsulated-postscript-pointer-1password-icon-trademark-logo-thumbnail.png"
-                  />
-                </a>
+                <div>
+                  <div class="sectionTitle">1-Password</div>
+                  <div>
+                    <a href="https://1password.com/" target="_blank">
+                      <img
+                        class="managers"
+                        src="Images/png-clipart-computer-icons-encapsulated-postscript-pointer-1password-icon-trademark-logo-thumbnail.png"
+                      />
+                    </a>
+                  </div>
+                </div>
               </section>
               <!-- NordPass -->
               <section>
-                <a href="https://nordpass.com/" target="_blank">
-                  <img class="managers" src="Images/0x0.png" />
-                </a>
+                <div>
+                  <div class="sectionTitle">NordPass</div>
+                  <div>
+                    <a href="https://nordpass.com/" target="_blank">
+                      <img class="managers" src="Images/0x0.png" />
+                    </a>
+                  </div>
+                </div>
               </section>
               <!-- Google Password Manager -->
               <section>
-                <a href="https://passwords.google.com/">
-                  <img
-                    class="managers"
-                    src="Images/880-8808512_png-file-svg-google-icon-svg-white.png"
-                  />
-                </a>
+                <div>
+                  <div class="sectionTitle">Google</div>
+                  <div>
+                    <a href="https://passwords.google.com/">
+                      <img
+                        class="managers"
+                        src="Images/880-8808512_png-file-svg-google-icon-svg-white.png"
+                      />
+                    </a>
+                  </div>
+                </div>
               </section>
               <!-- RoboForm -->
               <section>
-                <a href="https://www.roboform.com/">
-                  <img
-                    class="managers"
-                    src="Images/png-clipart-web-browser-roboform-computer-software-computer-program-browser-extension-upscale-letter-miscellaneous-computer-program.png"
-                  />
-                </a>
+                <div>
+                  <div class="sectionTitle">RoboForm</div>
+                  <div>
+                    <a href="https://www.roboform.com/">
+                      <img
+                        class="managers"
+                        src="Images/png-clipart-web-browser-roboform-computer-software-computer-program-browser-extension-upscale-letter-miscellaneous-computer-program.png"
+                      />
+                    </a>
+                  </div>
+                </div>
               </section>
               <!-- Keepass -->
               <section>
-                <a href="https://keepass.info/">
-                  <img class="managers" src="Images/keepass.png" />
-                </a>
+                <div>
+                  <div class="sectionTitle">Keepass</div>
+                  <div>
+                    <a href="https://keepass.info/">
+                      <img class="managers" src="Images/keepass.png" />
+                    </a>
+                  </div>
+                </div>
               </section>
             </div>
             <div class="controls">
@@ -242,27 +282,35 @@
             </div>
           </div>
         </div>
-        <h1 class="strengthTitle">
+        <div class="strengthTitle">
           Check your
           <span class="strengthTitle secondary">Strength</span>
+        </div>
+        <div class="strengthChecker"></div>
+        <h1 class="chanceTitle">
+          There's a 1 in
+          <span class="chanceTitle secondary">10000000000000000000000</span>
+          chance your password would be randomly guessed.
         </h1>
       </div>
     </div>
     <div class="footerClass">
-      <span>
-        <a href="https://www.linkedin.com/in/santiagoddiaz/" target="_blank">
-          <img class="logo" src="Images/linkedin.png" />
-        </a>
-        <a href="https://github.com/sddiaz" target="_blank">
-          <img class="logo" src="Images/github.png" />
-        </a>
-      </span>
-      <p class="bottomText">
-        2022 - Built with
-        <span class="bottomText heart">♡</span>
-        by
-        <span class="bottomText heart">Santi</span>
-      </p>
+      <div class="bottomAlign">
+        <span>
+          <a href="https://www.linkedin.com/in/santiagoddiaz/" target="_blank">
+            <img class="logo" src="Images/linkedin.png" />
+          </a>
+          <a href="https://github.com/sddiaz" target="_blank">
+            <img class="logo" src="Images/github.png" />
+          </a>
+        </span>
+        <p class="bottomText">
+          2022 - Built with
+          <span class="bottomText heart">♡</span>
+          by
+          <span class="bottomText heart">Santi</span>
+        </p>
+      </div>
     </div>
   </body>
   <script src="scripts.js"></script>

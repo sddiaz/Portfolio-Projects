@@ -19,12 +19,6 @@
 body {
     background: #f2f6f9;
     overflow-x: hidden;
-    border: 1px solid transparent;
-    
-}
-.bottomAlign {
-    min-height:100%;
-    position:relative;
 }
 .passwordTitle {
     text-align: center;
@@ -133,15 +127,12 @@ body {
 .rightSection {
     float: right;
     margin: 100px;
-    padding: 10px;
     background: #fff;
     width: 700px;
     height: 700px;
     border-radius: 15px;
     filter: drop-shadow(15px 10px 111px #a6a6bd);
     transition: .2s;
-    overflow-y: scroll;
-    overflow-x: hidden;
 }
 .rightSection:hover {
     transform: scale(1.05);

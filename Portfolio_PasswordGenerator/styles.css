@@ -31,6 +31,17 @@ body {
 .passwordTitle.secondary {
     color: #8b82ff;
 }
+.strengthTitle {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 130px;
+    margin-bottom: 10px;
+    font-family: myFirstFont;
+    color: #373f66;
+}
+.strengthTitle.secondary {
+    color: #8b82ff;
+}
 .storeSubTitle {
     text-align: center;
     font-size: 20px;
@@ -313,21 +324,30 @@ input:checked + .slider:before {
     display: inline-block;
     color: #8b82ff; 
 }
-#sliderInput {
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+.sliderInput {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
   vertical-align: middle;
   border: solid 1px #a6a6bd;
   border-radius: 8px;
   height: 7px;
   outline: none;
 }
-#sliderInput::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    color: #8b82ff; 
-    height: 20px; 
+  .sliderInput::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
     width: 20px;
-    background-color: #8b82ff; 
+    height: 20px;
     border-radius: 50%; 
-}
+    background: #8b82ff;
+    cursor: pointer; 
+  }
 #sliderInput::-moz-range-progress {
     background: #8b82ff;
     fill: 100%;
@@ -336,21 +356,29 @@ input:checked + .slider:before {
 /* Second Section */
 .carouselContainer{
     width: 85.7142857143%;
-    margin: 20px auto;
+    margin:  auto;
     height: 75px;  
 }
 .carousel {
     width: 100%;
-    height: 220%;
-    border: 2px solid orange; 
+    height: 230%;
     border-radius: 3px; 
+    margin-bottom: 100px;
     display: flex;
     justify-content: flex-start;
     position: relative;
+    overflow: hidden;
+    border: 3px solid #8b82ff;
+    box-shadow: 5px 5px 1px black;
+    border-radius: 15px;
+    transition: .5s;
+}
+.carousel:hover {
+    transform: scale(1.05);
 }
 .carouselSlider {
-    border: 1px solid green;
     display: flex; 
+    position: absolute;
     height: 100%;
     width: 700%;
     flex-shrink: 0;

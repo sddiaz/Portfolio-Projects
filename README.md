@@ -34,7 +34,7 @@ The idea of this application web-based message retrieval. It can be used from an
 ## **[Visit Here!](http://clippit.somee.com/)**  
 <hr>
 
-## **Passified: Password Generator web app (in progress)**  
+## **Password Generator web app (in progress)**  
 ## **Skills Utilized: HTML, CSS, JavaScript**  
 Details:  
 This simple password generator is nothing that hasn't been done a thousand times, so my goal is to make the UI experience the focal point. Plenty of moving parts and things that are nice to look at. I'll also include links to the top password storage / management systems so the user has some quick tools for their new password.   

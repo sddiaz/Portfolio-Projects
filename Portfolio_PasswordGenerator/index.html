@@ -44,11 +44,7 @@
             >
               <i style="color: white" class="fa-2x fa-solid fa-clipboard"></i>
             </button>
-            <button
-              title="Reverse Reverse!"
-              class="passIcons"
-              onclick="reversePass()"
-            >
+            <button title="Reverse!" class="passIcons" onclick="reversePass()">
               <i style="color: white" class="fa-2x fa-solid fa-refresh"></i>
             </button>
           </div>
@@ -174,13 +170,80 @@
         </div>
         <hr style="width: 50%; border: 1px solid #8b82ff" />
       </div>
-      <div
-        style="background: transparent; float: right; margin-left: 10px"
-        class="mainSection"
-      >
-        Second Div, recommendations, (tweet if you used this! api maybe), as an
-        added bonus, add (it would take x guesses to guess your password, or
-        (there is a one in x chance your pass will be randomly guessed.).)
+      <div class="rightSection">
+        <h1 class="passwordTitle">
+          <span class="passwordTitle secondary">Store</span> it
+          <span class="passwordTitle secondary">Safely</span>
+        </h1>
+        <h1 class="passwordTitle storeSubTitle">
+          We recommend these managers.
+        </h1>
+        <div class="carouselContainer">
+          <div id="carousel" class="carousel">
+            <div class="carouselSlider">
+              <!-- Bitwarden -->
+              <section>
+                <a href="https://bitwarden.com/" target="_blank">
+                  <img
+                    class="managers"
+                    src="Images/bitwarden-icon-256x256-pvtcmom9.png"
+                  />
+                </a>
+              </section>
+              <!-- LastPass -->
+              <section>
+                <a href="https://www.lastpass.com/" target="_blank">
+                  <img class="managers" src="Images/images.png" />
+                </a>
+              </section>
+              <!-- 1password -->
+              <section>
+                <a href="https://1password.com/" target="_blank">
+                  <img
+                    class="managers"
+                    src="Images/png-clipart-computer-icons-encapsulated-postscript-pointer-1password-icon-trademark-logo-thumbnail.png"
+                  />
+                </a>
+              </section>
+              <!-- NordPass -->
+              <section>
+                <a href="https://nordpass.com/" target="_blank">
+                  <img class="managers" src="Images/0x0.png" />
+                </a>
+              </section>
+              <!-- Google Password Manager -->
+              <section>
+                <a href="https://passwords.google.com/">
+                  <img
+                    class="managers"
+                    src="Images/880-8808512_png-file-svg-google-icon-svg-white.png"
+                  />
+                </a>
+              </section>
+              <!-- RoboForm -->
+              <section>
+                <a href="https://www.roboform.com/">
+                  <img
+                    class="managers"
+                    src="Images/png-clipart-web-browser-roboform-computer-software-computer-program-browser-extension-upscale-letter-miscellaneous-computer-program.png"
+                  />
+                </a>
+              </section>
+              <!-- Keepass -->
+              <section>
+                <a href="https://keepass.info/">
+                  <img class="managers" src="Images/keepass.png" />
+                </a>
+              </section>
+            </div>
+            <div class="controls">
+              <span id="prev" class="arrow prev">&#xab;</span>
+              <span id="next" class="arrow next">&#xbb;</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="funFacts"></div>
       </div>
     </div>
     <div class="footerClass">

@@ -1,5 +1,5 @@
-// Initialize necessary variables 
-
+//#region Variables
+// Main Section 
 const sliderValue = document.getElementById("sliderValue"); 
 const sliderInput = document.getElementById("sliderInput"); 
 // Grab ASCII code range for every selection 
@@ -16,6 +16,51 @@ sliderInput.oninput = (() => {
   sliderValue.textContent = value; 
   sliderValue.style.left = (value/2) + "%"
 });
+
+// Second Section
+const carousel = document.querySelector('.carousel');
+const carouselSlider = document.querySelector('.carouselSlider');
+const prev = document.getElementById('prev');
+const next = document.getElementById('next');
+var direction; 
+prev.addEventListener('click', function() {
+  if (direction == -1) {
+    carouselSlider.appendChild(carouselSlider.firstElementChild);  
+    direction = 1; 
+  }
+  direction = 1; 
+  carousel.style.justifyContent = 'flex-end';
+  carouselSlider.style.transform = 'translate(14.2857142857%)';
+})
+
+next.addEventListener('click', function() {
+  if (direction == 1) {
+    carouselSlider.prepend(carouselSlider.lastElementChild);  
+    direction = 1; 
+  }
+  direction = -1; 
+  carousel.style.justifyContent = 'flex-start';
+  carouselSlider.style.transform = 'translate(-14.2857142857%)';
+})
+
+
+carouselSlider.addEventListener('transitionend', function() {
+  if (direction == -1) {
+    carouselSlider.appendChild(carouselSlider.firstElementChild);  
+  }
+  else if (direction == 1) {
+    carouselSlider.prepend(carouselSlider.lastElementChild);  
+  }
+  carouselSlider.style.transition = 'none'; 
+  carouselSlider.style.transform = 'translate(0)'; 
+  setTimeout(function() {
+    carouselSlider.style.transition = '0.5s'; 
+  })
+})
+//#endregion 
+
+//#region Buttons
+
 function copyToClipboard() {   
   // Grab our element
   var passwordText = document.getElementById("passwordBox");
@@ -33,10 +78,6 @@ function reversePass() {
   passwordBox.value = joinedString;
 
 }
-
-
-
-//
 function generateClick() {
   // Grab all necessary checkboxes & form variables 
   var upperCase = document.getElementById("upperCase"); 
@@ -64,6 +105,10 @@ function generateClick() {
     passwordBox.value = password;
   }
 }
+
+//#endregion
+
+//#region Password Generation
 function generatePass(characterAmount, includeUppercase, includeLowercase, 
   includeSymbols, includeNumbers) {
     let charCodes = []; 
@@ -153,4 +198,5 @@ function getPossibleChars(characterAmount, includeUppercase, includeLowercase,
     }
     possibleCharacters = charCodes.length;
     return possibleCharacters;
-  }
+}
+//#endregion

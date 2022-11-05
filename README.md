@@ -6,7 +6,7 @@ A series of in-progress _personal_ projects I've done to increase my knowledge o
 
 ## **[Password Generator](https://tinyurl.com/passgenn)**  
 
-<img src="https://user-images.githubusercontent.com/101738608/200131392-d25eb984-b7a6-4667-bc64-1bce7fe3ccdb.png" width="500">  
+<img src="https://user-images.githubusercontent.com/101738608/200131392-d25eb984-b7a6-4667-bc64-1bce7fe3ccdb.png" width="800">  
 
 
 

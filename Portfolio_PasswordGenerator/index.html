@@ -22,13 +22,13 @@
         </div>
       </div>
       <div class="mainSection">
-        <h1 class="passwordTitle">
+        <div class="passwordTitle">
           Grab your
           <span class="passwordTitle secondary">Password</span>
-        </h1>
+        </div>
         <div class="passwordAndCopy">
           <input class="passwordBox" type="text" id="passwordBox" />
-          <div style="margin-top: 10px; margin-bottom: 10px">
+          <div class="buttonDiv" style="margin-top: 10px; margin-bottom: 10px">
             <button
               type="submit"
               title="Generate Password!"
@@ -49,9 +49,9 @@
             </button>
           </div>
           <hr style="margin-top: 15px; width: 50%; border: 1px solid #8b82ff" />
-          <h1 class="passwordTitle">
+          <div class="passwordTitle">
             <span class="passwordTitle secondary">Customize</span> your settings
-          </h1>
+          </div>
         </div>
         <div class="settings">
           <label id="firstCheckbox" style="margin-bottom: 35px">
@@ -271,9 +271,11 @@
                 </div>
               </section>
             </div>
-            <div class="controls">
-              <span id="prev" class="arrow prev">&#xab;</span>
-              <span id="next" class="arrow next">&#xbb;</span>
+            <div class="mobileAlign">
+              <div class="controls">
+                <span id="prev" class="arrow prev">&#xab;</span>
+                <span id="next" class="arrow next">&#xbb;</span>
+              </div>
             </div>
           </div>
         </div>
@@ -285,9 +287,16 @@
           Press Generate to try it out!
         </h1>
         <div class="strengthChecker">
-          <svg width="250" height="250" transform="rotate(270, 0, 0)">
-            <circle r="100" cx="125" cy="125" class="track"></circle>
-            <circle r="100" cx="125" cy="125" class="progress"></circle>
+          <svg
+            class="mySVG"
+            width="250"
+            height="250"
+            transform="rotate(270, 0, 0)"
+          >
+            <g class="newOrigin">
+              <circle r="100" cx="125" cy="125" class="track"></circle>
+              <circle r="100" cx="125" cy="125" class="progress"></circle>
+            </g>
           </svg>
           <div id="percentage" class="percentage">0%</div>
         </div>

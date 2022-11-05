@@ -7,8 +7,12 @@ const strengthPercent = document.getElementById("percentage");
 const upperCaseCodes = getAvailableCharacters(65, 90); 
 const lowerCaseCodes = getAvailableCharacters(97, 122); 
 const symbolCodes1 = getAvailableCharacters(33, 47);
-const symbolCodes2 = getAvailableCharacters(58, 126); 
-const symbolCodes = symbolCodes1.concat(symbolCodes2);
+const symbolCodes2 = getAvailableCharacters(58, 64); 
+const symbolCodes3 = getAvailableCharacters(91, 96);
+const symbolCodes4 = getAvailableCharacters(123, 126);
+const symbolCodesFirstHalf = symbolCodes1.concat(symbolCodes2);
+const symbolCodesSecondHalf = symbolCodes3.concat(symbolCodes4);
+const symbolCodes = symbolCodesFirstHalf.concat(symbolCodesSecondHalf);
 const numberCodes = getAvailableCharacters(48, 57); 
 var possibleCharacters;
 let chance = document.getElementById("chance");
@@ -230,7 +234,7 @@ function checkInputs(inputBox) {
     document.getElementsByTagName("body")[0].style.pointerEvents = "none"; 
     alertBox.style.visibility = "visible";
     closeBtn.style.visibility = "visible";
-    alertBox.style.boxShadow = "0 0 0 100vmax rgba(0,0,0,.3)";
+    alertBox.style.boxShadow = "0 0 0 100000vh rgba(0,0,0,.3)";
     alertBox.style.pointerEvents = "all"; 
   }
 }

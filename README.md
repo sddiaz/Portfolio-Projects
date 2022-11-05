@@ -22,6 +22,8 @@ The infamous calculator project. Simple, small, but what I believe to be just hu
 ## **[Inspiration](https://dribbble.com/shots/14709020-Calculator)**
 
 <hr>  
+
+
 ## **Clippit**: Clipboard web app  
 
 <img src="https://user-images.githubusercontent.com/101738608/197719421-a2647341-fe8b-4753-b377-5989eec35c6c.png" width="500">

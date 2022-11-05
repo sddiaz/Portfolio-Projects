@@ -2,6 +2,29 @@
 A series of in-progress _personal_ projects I've done to increase my knowledge of software development.  
 (Many more work-related projects have been completed, these are solely the personal ones).  
 (A personal portfolio website will be up once I have 5-10 projects finished)
+<hr>  
+
+## **Password Generator**  
+
+<img src="https://user-images.githubusercontent.com/101738608/200131392-d25eb984-b7a6-4667-bc64-1bce7fe3ccdb.png" width="500">  
+
+
+
+## **Skills Utilized: HTML, CSS, JavaScript**  
+Details:  
+This simple password generator is nothing that hasn't been done a thousand times, so my goal was to make the UI experience the focal point. This was my first time really focusing on creating a pleasant UI, and I think I got the job done. Plenty of moving parts and things that are nice to look at. I included custom switches, a reactive slider, plenty of hover effects, an infinite carousel, and more. I learned a ton this project, mostly about organizing projects and working on creating clean code. 
+<hr>
+
+
+## **Clippit**: Clipboard web app  
+
+<img src="https://user-images.githubusercontent.com/101738608/197719421-a2647341-fe8b-4753-b377-5989eec35c6c.png" width="500">
+
+
+## **Skills Utilized: Microsoft SQL, HTML, CSS, C#**  
+Details:   
+The idea of this application web-based message retrieval. It can be used from any device via a web browser. The goal here was to implement a database, and make the UI look appealing (albeit simple) as well! Once again, small and simple, with greater things to come.    
+## **[Visit Here!](http://clippit.somee.com/)**  
 <hr>
 
 ## **Calculator**: 
@@ -22,27 +45,3 @@ The infamous calculator project. Simple, small, but what I believe to be just hu
 ## **[Inspiration](https://dribbble.com/shots/14709020-Calculator)**
 
 <hr>
-
-## **Clippit**: Clipboard web app  
-
-<img src="https://user-images.githubusercontent.com/101738608/197719421-a2647341-fe8b-4753-b377-5989eec35c6c.png" width="500">
-
-
-## **Skills Utilized: Microsoft SQL, HTML, CSS, C#**  
-Details:   
-The idea of this application web-based message retrieval. It can be used from any device via a web browser. The goal here was to implement a database, and make the UI look appealing (albeit simple) as well! Once again, small and simple, with greater things to come.    
-## **[Visit Here!](http://clippit.somee.com/)**  
-<hr>
-
-## **Password Generator**  
-
-<img> src="https://user-images.githubusercontent.com/101738608/200131392-d25eb984-b7a6-4667-bc64-1bce7fe3ccdb.png" width="500">  
-
-
-
-## **Skills Utilized: HTML, CSS, JavaScript**  
-Details:  
-This simple password generator is nothing that hasn't been done a thousand times, so my goal was to make the UI experience the focal point. This was my first time really focusing on creating a pleasant UI, and I think I got the job done. Plenty of moving parts and things that are nice to look at. I included custom switches, a reactive slider, plenty of hover effects, an infinite carousel, and more. I learned a ton this project, mostly about organizing projects and working on creating clean code. 
-<hr>
-
-

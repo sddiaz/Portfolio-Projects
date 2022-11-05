@@ -13,26 +13,21 @@
       <div class="title box">Generator</div>
     </div>
     <div class="container">
-      <div class="mainSection">
-        <div class="alertArea">
-          <div id="alertMessage" class="alertMessage">
-            <span>You need at least one selection</span>
-            <span id="closeBtn" class="closeBtn" onclick="closeAlert(this);"
-              >&times;</span
-            >
-          </div>
+      <div class="alertArea">
+        <div id="alertMessage" class="alertMessage">
+          <span>You need at least one selection</span>
+          <span id="closeBtn" class="closeBtn" onclick="closeAlert(this);"
+            >&times;</span
+          >
         </div>
+      </div>
+      <div class="mainSection">
         <h1 class="passwordTitle">
           Grab your
           <span class="passwordTitle secondary">Password</span>
         </h1>
         <div class="passwordAndCopy">
-          <input
-            oninput="strengthChecker()"
-            class="passwordBox"
-            type="text"
-            id="passwordBox"
-          />
+          <input class="passwordBox" type="text" id="passwordBox" />
           <div style="margin-top: 10px; margin-bottom: 10px">
             <button
               type="submit"
@@ -161,7 +156,7 @@
                   class="sliderInput"
                   id="sliderInput"
                   type="range"
-                  min="1"
+                  min="8"
                   max="128"
                   value="8"
                   step="1"
@@ -286,15 +281,20 @@
           Check your
           <span class="strengthTitle secondary">Strength</span>
         </div>
+        <h1 class="passwordTitle storeSubTitle">
+          Press Generate to try it out!
+        </h1>
         <div class="strengthChecker">
-          <svg width="220" height="220">
-            <circle r="80" cx="110" cy="110" class="track"></circle>
-            <circle r="80" cx="110" cy="110" class="progress"></circle>
+          <svg width="250" height="250" transform="rotate(270, 0, 0)">
+            <circle r="100" cx="125" cy="125" class="track"></circle>
+            <circle r="100" cx="125" cy="125" class="progress"></circle>
           </svg>
+          <div id="percentage" class="percentage">0%</div>
         </div>
         <h1 class="chanceTitle">
           There's a 1 in
-          <span class="chanceTitle secondary">x</span>
+          <span id="chance" class="chanceTitle secondary">x</span
+          ><sup id="myExponent" class="chanceTitle secondary">x</sup>
           chance your password would be randomly guessed.
         </h1>
       </div>

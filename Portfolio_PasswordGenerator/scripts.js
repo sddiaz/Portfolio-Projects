@@ -2,6 +2,7 @@
 // Main Section 
 const sliderValue = document.getElementById("sliderValue"); 
 const sliderInput = document.getElementById("sliderInput"); 
+const strengthPercent = document.getElementById("percentage");
 // Grab ASCII code range for every selection 
 const upperCaseCodes = getAvailableCharacters(65, 90); 
 const lowerCaseCodes = getAvailableCharacters(97, 122); 
@@ -10,11 +11,9 @@ const symbolCodes2 = getAvailableCharacters(58, 126);
 const symbolCodes = symbolCodes1.concat(symbolCodes2);
 const numberCodes = getAvailableCharacters(48, 57); 
 var possibleCharacters;
-
-
-
-
-
+let chance = document.getElementById("chance");
+let myExponent = document.getElementById('myExponent');
+// Update Slider Value on Slide
   
 sliderInput.oninput = (() => {
   let value = sliderInput.value; 
@@ -25,17 +24,21 @@ sliderInput.oninput = (() => {
 
 // Strength Checker Variables 
 let progressCircle = document.querySelector('.progress');
-let radius = progressCircle.r.baseVal.value;
-let circumference = 2 * Math.PI * radius; 
+let radius = progressCircle.r.baseVal.value; 
+let circumference = Math.PI * 2 * radius; 
 progressCircle.style.strokeDasharray = circumference;
-// Strength Checker Function
-function strengthChecker() {
-  let charCount = passwordBox.value.length;
-  setProgress(charCount);
-}
-function setProgress(charCount) {
-  progressCircle.style.strokeDashoffest = circumference - (charCount / 100) * circumference;
-  console.log(circumference);
+let count = 1;
+let includeUppercase = upperCase.checked; 
+let includeLowercase = lowerCase.checked; 
+let includeSymbols = symbols.checked; 
+let includeNumbers = numbers.checked; 
+let includedSettings = 0; 
+let max = 0;
+let percentage = 0;
+// 0 - 100
+
+function setProgress(percent) {
+  progressCircle.style.strokeDashoffset = circumference - (percent / 100) * circumference;
 }
 //#region Second Section
 const carousel = document.querySelector('.carousel');
@@ -132,25 +135,60 @@ function generateClick() {
 function generatePass(characterAmount, includeUppercase, includeLowercase, 
   includeSymbols, includeNumbers) {
     let charCodes = []; 
+    // For Strength Checker
+    let includedSettings = 0; 
     if (includeUppercase) {
       charCodes = charCodes.concat(upperCaseCodes);
+      includedSettings++; 
     }
     if (includeLowercase) {
       charCodes = charCodes.concat(lowerCaseCodes);
+      includedSettings++; 
     }
     if (includeSymbols) {
       charCodes = charCodes.concat(symbolCodes);
+      includedSettings++; 
     }
     if (includeNumbers) {
       charCodes = charCodes.concat(numberCodes);
+      includedSettings++; 
     }
     possibleCharacters = charCodes.length;
+    // Fill out "strength checker" circle
+    let percent = possibleCharacters; 
+    if (percent > 100 && percent < 140) {
+      percent = 90; 
+    }
+    else if (percent > 140) {
+      percent = 100;
+    }
+    if (sliderInput.value > 30) {
+      percent = 100;
+    }
+    strengthPercent.textContent = percent + "%"; 
+    setProgress(percent);
+
     const passwordCharacters = []; 
     for (let i = 0; i < characterAmount; i++) {
       const characterCode = charCodes[Math.floor(Math.random() * charCodes.length)];
       passwordCharacters.push(String.fromCharCode(characterCode));
     }
-    return passwordCharacters.join('');
+    var myPassword = passwordCharacters.join('');
+
+
+    // Chance of guessing = 1 / (possible characters ^ string length)
+    // Get all unique characters. 
+    var uniqueCharacters = new Set();
+    for (let i = 0; i < myPassword.length; i++) {
+      if (!uniqueCharacters.has(myPassword[i])) {
+        uniqueCharacters.add(myPassword[i]); 
+      }
+    }
+    chance.textContent = uniqueCharacters.size;
+    myExponent.textContent = sliderInput.value;
+    ///
+    ///
+    return myPassword;
 }
 function getAvailableCharacters(low, high) {
   const array = []; 

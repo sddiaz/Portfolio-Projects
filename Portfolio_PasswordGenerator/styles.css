@@ -19,8 +19,7 @@
 body {
     background: #f2f6f9;
     overflow-x: hidden;
-    border: 1px solid transparent;
-    
+    padding-bottom: 0x;
 }
 .bottomAlign {
     min-height:100%;
@@ -105,12 +104,14 @@ body {
     margin-left: 10px;
     color: black;
 }
+.alignEverything {
+    margin-top: 10vh;
+}
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 50px;
 }
 .mainSection {
     float: left;

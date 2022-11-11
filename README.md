@@ -49,5 +49,5 @@ The idea of this application web-based message retrieval. It can be used from an
 **Details**:    
 This simple password generator is nothing that hasn't been done a thousand times, so my goal was to make the UI experience the focal point. This was my first time really focusing on creating a pleasant UI, and I think I got the job done. Plenty of moving parts and things that are nice to look at. I included custom switches, a reactive slider, plenty of hover effects, an infinite carousel, and more. I learned a ton this project, mostly about organizing projects and working on creating clean code.   
 **Lessons Learned**:   
-Don't leave any "Broken Windows" so to speak!.. Maintain that standard of producing seamless projects even if the issue you're trying to fix seems so small and minute that no one but you would ever no about it.   
+Don't leave any "Broken Windows" so to speak!.. Maintain that standard of producing seamless projects even if the issue you're trying to fix seems so small and minute that no one but you would ever know about it.   
 <hr>

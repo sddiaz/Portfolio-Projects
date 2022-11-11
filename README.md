@@ -31,7 +31,7 @@ Dynamic Layouts are extremely important, even if all your users are only on desk
 <img src="https://user-images.githubusercontent.com/101738608/197719421-a2647341-fe8b-4753-b377-5989eec35c6c.png" width="500">
 
 
-## **Skills Utilized: Microsoft SQL, HTML, CSS, C#**  
+## **Skills Utilized: ASP.NET, Microsoft SQL, HTML, CSS, C#**  
 **Details**:     
 The idea of this application web-based message retrieval. It can be used from any device via a web browser. The goal here was to implement a database, and make the UI look appealing (albeit simple) as well! Once again, small and simple, with greater things to come.      
 **Lessons Learned**:   

@@ -4,7 +4,7 @@ A series of in-progress _personal_ projects I've done to increase my knowledge o
 **(A personal portfolio website will be up once I have a sufficient number of projects finished)**
 <hr>  
 
-## **Calculator**: 
+## **Desktop Calculator**: 
 <!DOCTYPE html>
 <html lang="en">
   <body>

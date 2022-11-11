@@ -16,10 +16,10 @@ A series of in-progress _personal_ projects I've done to increase my knowledge o
 </html>
 
 ## **Skills Utilized: C#, XAML, WPF**  
-Details:  
-The infamous calculator project. Simple, small, but what I believe to be just humble beginnings. Not much else to it. Dark mode and some extra flashiness for brownie points. 
-Lessons Learned: 
-Dynamic Layouts are extremely important, even if all your users are only on desktop devices! Setting up a solid, scalable layout piece by piece, and THEN putting all the fancy touches on is the ideal route. 
+**Details**:  
+The infamous calculator project. Simple, small, but what I believe to be just humble beginnings. Not much else to it. Dark mode and some extra flashiness for brownie points.   
+**Lessons Learned**:   
+Dynamic Layouts are extremely important, even if all your users are only on desktop devices! Setting up a solid, scalable layout piece by piece, and THEN putting all the fancy touches on is the ideal route.   
 ## **[Download Here](https://github.com/sddiaz/Portfolio-Projects/files/9586536/Portfolio_Calculator.zip)** *(Click "Extract Here" (not extract all) and run "Calculator.application - Shortcut")*   
 ## **[Inspiration](https://dribbble.com/shots/14709020-Calculator)**
 
@@ -32,10 +32,10 @@ Dynamic Layouts are extremely important, even if all your users are only on desk
 
 
 ## **Skills Utilized: Microsoft SQL, HTML, CSS, C#**  
-Details:   
-The idea of this application web-based message retrieval. It can be used from any device via a web browser. The goal here was to implement a database, and make the UI look appealing (albeit simple) as well! Once again, small and simple, with greater things to come.    
-Lessons Learned: 
-.NET provides a solid way to integrate your backend classes with your frontend HTML and CSS (via c#), make sure that you don't get lost in the plethora of files (.cs, .cshtml, .webconfig, etc. etc. etc.) and are able to understand what each piece of the .NET framework puzzle does to make everything happen. 
+**Details**:     
+The idea of this application web-based message retrieval. It can be used from any device via a web browser. The goal here was to implement a database, and make the UI look appealing (albeit simple) as well! Once again, small and simple, with greater things to come.      
+**Lessons Learned**:   
+.NET provides a solid way to integrate your backend classes with your frontend HTML and CSS (via c#), make sure that you don't get lost in the plethora of files (.cs, .cshtml, .webconfig, etc. etc. etc.) and are able to understand what each piece of the .NET framework puzzle does to make everything happen.   
 <hr>
 
 
@@ -46,8 +46,8 @@ Lessons Learned:
 
 
 ## **Skills Utilized: HTML, CSS, JavaScript**  
-Details:  
-This simple password generator is nothing that hasn't been done a thousand times, so my goal was to make the UI experience the focal point. This was my first time really focusing on creating a pleasant UI, and I think I got the job done. Plenty of moving parts and things that are nice to look at. I included custom switches, a reactive slider, plenty of hover effects, an infinite carousel, and more. I learned a ton this project, mostly about organizing projects and working on creating clean code. 
-Lessons Learned: 
-Don't leave any "Broken Windows" so to speak!.. Maintain that standard of producing seamless projects even if the issue you're trying to fix seems so small and minute that no one but you would ever no about it. 
+**Details**:    
+This simple password generator is nothing that hasn't been done a thousand times, so my goal was to make the UI experience the focal point. This was my first time really focusing on creating a pleasant UI, and I think I got the job done. Plenty of moving parts and things that are nice to look at. I included custom switches, a reactive slider, plenty of hover effects, an infinite carousel, and more. I learned a ton this project, mostly about organizing projects and working on creating clean code.   
+**Lessons Learned**:   
+Don't leave any "Broken Windows" so to speak!.. Maintain that standard of producing seamless projects even if the issue you're trying to fix seems so small and minute that no one but you would ever no about it.   
 <hr>

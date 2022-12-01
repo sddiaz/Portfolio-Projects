@@ -1,5 +1,5 @@
 # Portfolio-Projects   
-A series of in-progress _personal_ projects I've done to increase my knowledge of software development.  
+A chronological series of in-progress _personal_ projects I've done to increase my knowledge of software development.  
 (Many more work-related projects have been completed, these are solely the personal ones).  
 **(A personal portfolio website will be up once I have a sufficient number of projects finished)**
 <hr>  

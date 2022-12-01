@@ -33,7 +33,7 @@ Dynamic Layouts are extremely important, even if all your users are only on desk
 
 ## **Skills Utilized: ASP.NET, Microsoft SQL, HTML, CSS, C#**  
 **Details**:     
-The idea of this application web-based message retrieval. It can be used from any device via a web browser. The goal here was to implement a database, and make the UI look appealing (albeit simple) as well! Once again, small and simple, with greater things to come.      
+The idea of this application is web-based message retrieval. It can be used from any device via a web browser. The goal here was to implement a database and make the UI look appealing (albeit simple) as well! Once again, small and simple, but something I'm very proud of.      
 **Lessons Learned**:   
 .NET provides a solid way to integrate your backend classes with your frontend HTML and CSS (via c#), make sure that you don't get lost in the plethora of files (.cs, .cshtml, .webconfig, etc. etc. etc.) and are able to understand what each piece of the .NET framework puzzle does to make everything happen.   
 <hr>

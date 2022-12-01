@@ -17,7 +17,7 @@ A chronological series of in-progress _personal_ projects I've done to increase 
 
 ## **Skills Utilized: C#, XAML, WPF**  
 **Details**:  
-The infamous calculator project. Simple, small, but what I believe to be just humble beginnings. Not much else to it. Dark mode and some extra flashiness for brownie points.   
+The infamous calculator project. Simple, small, with plenty of room for improvements (such as resizing). Not much else to it. Dark mode and some extra flashiness for brownie points.   
 **Lessons Learned**:   
 Dynamic Layouts are extremely important, even if all your users are only on desktop devices! Setting up a solid, scalable layout piece by piece, and THEN putting all the fancy touches on is the ideal route.   
 ## **[Download Here](https://github.com/sddiaz/Portfolio-Projects/files/9586536/Portfolio_Calculator.zip)** *(Click "Extract Here" (not extract all) and run "Calculator.application - Shortcut")*   

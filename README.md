@@ -53,7 +53,7 @@ Don't leave any "[Broken Windows](https://medium.com/@learnstuff.io/broken-windo
 <hr>  
 
 
-## **WiD (Write it Down)**    
+## **WiD (Write it Down) (in progress)**    
 
 
 ## **Skills Utilized: NEXT.JS, React, JSX, HTML, CSS, JavaScript**  

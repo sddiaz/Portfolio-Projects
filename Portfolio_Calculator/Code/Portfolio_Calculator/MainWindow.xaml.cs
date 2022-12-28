@@ -47,48 +47,6 @@ namespace Portfolio_Calculator
             darkModeGrid.Width = SystemParameters.PrimaryScreenWidth * 0.035;
             this.mainGrid.RowDefinitions[0].Height = (GridLength)myConverter.ConvertFromString((SystemParameters.PrimaryScreenHeight * 0.32).ToString());
             this.mainGrid.RowDefinitions[1].Height = (GridLength)myConverter.ConvertFromString((SystemParameters.PrimaryScreenHeight * 0.47).ToString());
-            #region Mess.. will fix soon. 
-            AC.Width = buttonSize;
-            AC.Height = buttonSize;
-            plusMinus.Width = buttonSize;
-            plusMinus.Height = buttonSize;
-            percent.Width = buttonSize;
-            percent.Height = buttonSize;
-            divide.Width = buttonSize;
-            divide.Height = buttonSize; 
-            seven.Height = buttonSize;
-            seven.Width = buttonSize;
-            six.Height = buttonSize;
-            six.Width = buttonSize;
-            five.Height = buttonSize;
-            five.Width = buttonSize;
-            four.Height = buttonSize;
-            four.Width = buttonSize;
-            three.Height = buttonSize;
-            three.Width = buttonSize;
-            two.Height = buttonSize;
-            two.Width = buttonSize;
-            one.Height = buttonSize;
-            one.Width = buttonSize;
-            zero.Height = buttonSize;
-            zero.Width = buttonSize;
-            dot.Height = buttonSize;
-            dot.Width = buttonSize;
-            redo.Height = buttonSize;
-            redo.Width = buttonSize;
-            equals.Height = buttonSize;
-            equals.Width = buttonSize;
-            add.Height = buttonSize;
-            add.Width = buttonSize;
-            subtract.Height = buttonSize;
-            subtract.Width = buttonSize;
-            multiply.Height = buttonSize;
-            multiply.Width = buttonSize;
-            eight.Height = buttonSize;
-            eight.Width = buttonSize;
-            nine.Height = buttonSize;
-            nine.Width = buttonSize;
-            #endregion
             #endregion
         }
 

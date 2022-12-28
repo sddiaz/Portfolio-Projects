@@ -534,7 +534,7 @@ input:checked + .slider:before {
     .mySVG {
         width: 100; 
         height: 100;
-        position: absolute;
+        position: relative;
     }
     .track {
         transform:scale(.6, .6)

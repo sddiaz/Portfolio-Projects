@@ -592,8 +592,8 @@ function Info() {
             { className: "webContainer" },
             _react2.default.createElement(
                 "a",
-                { className: "info--website", href: "" },
-                "(202)-751-5358"
+                { className: "info--website", href: "https://docs.google.com/document/d/e/2PACX-1vT5_vZ_fqLC8BmadOV9hdSAHpZFBJJka1oDyZ8kPPXpGJFplpYy_hamNpAZP2R0w2v0plYLqn8w66BT/pub" },
+                "Resume"
             )
         ),
         _react2.default.createElement(

@@ -7,7 +7,7 @@ export default function Info() {
             <h1 className="info--name">Santiago Diaz</h1>
             <h2 className="info--title">Aspiring Software Engineer</h2>
             <div className="webContainer">
-            <a className="info--website" href="">(202)-751-5358</a>
+            <a className="info--website" href="https://docs.google.com/document/d/e/2PACX-1vT5_vZ_fqLC8BmadOV9hdSAHpZFBJJka1oDyZ8kPPXpGJFplpYy_hamNpAZP2R0w2v0plYLqn8w66BT/pub">Resume</a>
             </div>
             <div className="info--buttons"> 
                 <button onClick={emailFunction} className="info--email"><i style={{ color: '#1E1F26'}} className="fa fa-envelope fa-fw"></i>Email</button>

@@ -54,8 +54,6 @@ body {
     font-family: 'Inter', sans-serif;
     color: #F5F5F5;
     width: 228px;
-    text-decoration: none;
-    cursor: inherit;
 }
 .info--buttons {
     margin-top: 10px;

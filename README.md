@@ -49,7 +49,7 @@ The idea of this application is web-based message retrieval. It can be used from
 **Details**:    
 This simple password generator is nothing that hasn't been done a thousand times, so my goal was to make the UI experience the focal point. This was my first time really focusing on creating a pleasant UI, and I think I got the job done. Plenty of moving parts and things that are nice to look at. I included custom switches, a reactive slider, plenty of hover effects, an infinite carousel, and more. I learned a ton this project, mostly about organizing projects and working on creating clean code.   
 **Lessons Learned**:   
-Don't leave any "[Broken Windows](https://medium.com/@learnstuff.io/broken-window-theory-in-software-development-bef627a1ce99)" so to speak (I am guilty of this). Maintain a high standard of producing seamless, fault-free projects even if said fault you're trying to fix seems so small and minute that no one but you would ever know about it.   
+Don't leave any "[Broken Windows](https://medium.com/@learnstuff.io/broken-window-theory-in-software-development-bef627a1ce99)" so to speak (I have been guilty of this at times). Maintain a high standard of producing seamless, fault-free projects even if said fault you're trying to fix seems so small and minute that no one but you would ever know about it. UI design is not the easiest thing in the world, but I would say for my first real time ever using javascript, I managed to produce a quality gadget. 
 <hr>  
 
 

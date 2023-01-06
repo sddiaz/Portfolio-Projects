@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    overflow-y: overlay;
+}
+/* Handle */
+::-webkit-scrollbar {
+  width: 7px;
+  overflow-y: overlay;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #F55A5A; 
+  border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #db5151; 
+}
+::-webkit-scrollbar-track {
+    margin-top: 55px;
+}
+::selection {
+    color: none;
+    background: none;
+}
+hr {
+    width: 80vw;
+    background-color: #F5F5F5;
+    height: 2px;
+    border: none;
+    border-radius: 10px;
+}
+a {
+    color: grey;
+}
+.cards{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.banner {
+    background-color: #F55A5A;
+    color: white;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+}
+.banner--title {
+    margin-left: 5px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+.cards--container {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    max-width: 670px;
+    margin: 20px;
+}
+.cards--img {
+    width: 225px;
+    border-radius: 5px;
+}
+.cards--main {
+    margin-left: 19px;
+}
+.cards--info {
+    display: flex;
+    align-items: left;
+    color: #2B283A;
+    height: 10px;
+    margin-bottom: 10px;
+    font-size: 15.24px;
+}
+.cards--info > * {
+    margin-right: 5px;
+}
+.cards--location, .cards--maps, .cards--desc {
+    font-family: inter;
+    font-size: 16.24px;
+}
+.cards--location {
+     letter-spacing: 0.1em;
+}
+.cards--title {
+    font-family: inter;
+    font-weight: bolder;
+    margin-top: 25px; 
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+.cards--date {
+    font-family: inter;
+    font-weight: 700;
+    margin-top: 17px;
+    font-size: 14.24px;
+}
+button {
+    background: transparent;
+    border: none !important;
+    outline-color: transparent;
+    border-radius: 99px;
+}
+button:focus {outline:0;}
+.banner--svg {
+    transition: 0.3s;
+}
+.banner--svg:hover {
+    transform: scale(1.1);
+    border: 1px solid;
+    box-shadow: 1px 1px;
+}

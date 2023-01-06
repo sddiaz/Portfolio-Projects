@@ -43,13 +43,14 @@ a {
     align-items: center;
 }
 .banner {
-    background-color: #F55A5A;
+    background-color: #434366;
     color: white;
     display: flex; 
     align-items: center;
     justify-content: center;
     height: 55px;
 }
+/*Colors we need: #434366 #181825 #F55A5A #db5151*/
 .banner--title {
     margin-left: 5px;
     font-family: 'Inter', sans-serif;

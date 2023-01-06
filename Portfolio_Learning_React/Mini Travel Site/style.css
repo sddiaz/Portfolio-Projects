@@ -66,6 +66,7 @@ a {
 .cards--img {
     width: 225px;
     border-radius: 5px;
+    transition: 0.2s;
 }
 .cards--main {
     margin-left: 19px;
@@ -106,13 +107,8 @@ button {
     border: none !important;
     outline-color: transparent;
     border-radius: 99px;
-}
-button:focus {outline:0;}
-.banner--svg {
     transition: 0.3s;
 }
-.banner--svg:hover {
-    transform: scale(1.1);
-    border: 1px solid;
-    box-shadow: 1px 1px;
+.cards--img:hover {
+    transform:scale(1.07);
 }

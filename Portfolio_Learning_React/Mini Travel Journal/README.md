@@ -6,6 +6,7 @@ This simple static page is a part of my journey to learn React! I wanted to get 
 
 ### Project Requirements
 
+- Utilize props and data mapping
 - Appealing Design (Focal Point)
 - Responsive Layout (mobile friendly)
 

@@ -31,5 +31,6 @@ This simple password generator is nothing that hasn't been done a thousand times
 
 ### Useful resources
 
-- [Database Setup](https://www.youtube.com/watch?v=bIiEv__QNxw&ab_channel=IAmTimCorey) - .NET MVC Data Access Tutorial
+- [Similar Guide](https://www.pcmag.com/how-to/how-to-create-a-strong-password-generator) - While I did not use any guide or tutorial aside from fixing some bugs, this guide provides users with another way to setup a project like this!
+- [FreeCodeCamp](https://www.freecodecamp.org/news/html-css-and-javascript-explained-for-beginners/) - Course on HTML / CSS / JS
 - [W3 Schools](https://www.w3schools.com/html/) - Amazing resource for HTML / CSS fundamentals and tricks.

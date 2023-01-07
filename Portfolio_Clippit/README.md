@@ -6,7 +6,7 @@ This is a basic
 
 - [Overview](#overview)
   - [Project Requirements](#Project-Requirements)
-  - [Screenshots](#screenshot)
+  - [Screenshots](#screenshots)
   - [Links](#links)
 - [My process](#my-process)
   - [What I learned](#what-i-learned)

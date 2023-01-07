@@ -38,7 +38,7 @@ GitHub account, but I know it'll be a good reminder of where I came from after m
 ### Links
 
 * Download: [@Click Me](https://github.com/sddiaz/Portfolio-Projects/files/9586536/Portfolio_Calculator.zip)
-* Instructions: *(Right click "Extract Here", find and run "Calculator.application - Shortcut")
+* Instructions: (Right click "Extract Here", find and run "Calculator.application - Shortcut")
 
 ### What I learned
 

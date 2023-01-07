@@ -1,51 +1,41 @@
-# Scrimba - Travel Journal solution
+# Portfolio Projects - Clippit
 
-This is a solution to the [Travel Journal solo project on Scrimba](https://scrimba.com/learn/learnjavascript/). Scrimba helps you improve your coding skills by building realistic projects.
+This is a basic
 
 ## Table of contents
 
 - [Overview](#overview)
-  - [Requirements](#requirements)
-  - [Screenshot](#screenshot)
+  - [Project Requirements](#requirements)
+  - [Screenshots](#screenshot)
   - [Links](#links)
-  - [Getting Started with Create React App](#getting-started-with-create-react-app)
 - [My process](#my-process)
-  - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
-- [Author](#author)
 
 ## Overview
 
-### Requirements
+### Project Requirements
 
-- Data array in a separate .js file
-  - Title, description, price, cover image, rating, review count, location, open spots
-- Use .map() and props
-- Style & polished
-- Mobile designed
+- Data Base Integration and Information Retrieval
+- Unique ID Generator (1000 - 9999) 
+- Error Checking
+- Appealing / Responsive Layout
 
-### Screenshot
+### Screenshots
 
-![screenshot](/src/screenshots/screenshot.png)
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <div class="row">
+<img src="https://user-images.githubusercontent.com/101738608/197716595-29a3c9fe-ef55-44b0-b27d-e248e2e3325e.png" width="200">
+<img src="https://user-images.githubusercontent.com/101738608/197716633-2f36c5f1-4e3f-4595-8715-f136086fa306.png" width="200">
+  </div>
+  </body>
+</html>
 
 ### Links
 
-- Live Site URL: [@Netlify](https://travel-journal-xdelmo.netlify.app/)
-- Solution URL: [@GitHub](https://github.com/xdelmo/travel-journal)
-
-### Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## My process
-
-### Built with
-
-- Semantic HTML5 markup
-- CSS custom properties
-- React.JS
-- Flexbox
+* Site URL: [@Somee](https://clippit.somee.com/)
 
 ### What I learned
 
@@ -99,7 +89,3 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [ReactJS](https://reactjs.org/tutorial/tutorial.html) - How to set up a local development environment on your computer
 - [FontAwesome](https://fontawesome.com/v5/docs/web/use-with/react) - How to install FontAwesome packages for React -[BobbyHadz](https://bobbyhadz.com/blog/react-assign-object-to-variable-before-exporting-as-module) - Assign object to variable before exporting as module default
 - [Developer Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme) - Detect if the user has requested a light or dark color theme
-
-## Author
-
-- Website - [Emanuele Del Monte](https://www.emanueledelmonte.it)

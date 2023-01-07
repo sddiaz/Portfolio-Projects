@@ -1,6 +1,6 @@
 # Portfolio Projects - Clippit
 
-The idea of this application is web-based message retrieval. It can be used from any device via a web browser. The goal here was to implement a database and make the UI look appealing (albeit simple) as well! Once again, small and simple, but something I'm very proud of.
+The idea of this application is web-based message retrieval. It can be used from any device via a web browser. The goal here was to implement a database and make the UI look appealing (albeit simple) as well! Once again, small and simple, but something I was very proud of as it was my first personal HTML/CSS project!
 
 ## Overview
 

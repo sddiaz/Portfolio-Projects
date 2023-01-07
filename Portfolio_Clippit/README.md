@@ -1,17 +1,6 @@
 # Portfolio Projects - Clippit
 
-This is a basic
-
-## Table of contents
-
-- [Overview](#overview)
-  - [Project Requirements](#Project-Requirements)
-  - [Technologies Utilized](#Technologies-Utilized)
-  - [Screenshots](#screenshots)
-  - [Links](#links)
-- [My process](#my-process)
-  - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
+The idea of this application is web-based message retrieval. It can be used from any device via a web browser. The goal here was to implement a database and make the UI look appealing (albeit simple) as well! Once again, small and simple, but something I'm very proud of.
 
 ## Overview
 

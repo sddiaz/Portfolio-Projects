@@ -23,15 +23,7 @@ This is a basic
 
 ### Screenshots
 
-<!DOCTYPE html>
-<html lang="en">
-  <body>
-    <div class="row">
-<img src="https://user-images.githubusercontent.com/101738608/197716595-29a3c9fe-ef55-44b0-b27d-e248e2e3325e.png" width="200">
-<img src="https://user-images.githubusercontent.com/101738608/197716633-2f36c5f1-4e3f-4595-8715-f136086fa306.png" width="200">
-  </div>
-  </body>
-</html>
+<img src="https://user-images.githubusercontent.com/101738608/197719421-a2647341-fe8b-4753-b377-5989eec35c6c.png" width="500">
 
 ### Links
 

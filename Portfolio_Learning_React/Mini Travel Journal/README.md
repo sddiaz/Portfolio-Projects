@@ -1,25 +1,41 @@
-# co46444e88b0fbdd944625754
+# Portfolio Projects - Mini Travel Journal
 
-Quick start:
+This simple static page is a part of my journey to learn React! I wanted to get the basics down before jumping in to a full-stack project (database, authentication, user classes, etc.)  
 
-```
-$ yarn # npm install
-$ yarn build # npm run build
-````
+## Overview
 
-## Development
+### Project Requirements
 
-Run Webpack in watch-mode to continually compile the JavaScript as you work:
+- Appealing Design (Focal Point)
+- Responsive Layout 
+- Error Checking and Handling All Edge Cases
 
-```
-$ yarn watch # npm run watch
-```
+### Technologies Utilized
 
-## About Scrimba
+- React
+- JSX
+- Visual Studio Code
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+### Screenshots
+
+<img src="https://user-images.githubusercontent.com/101738608/200132021-1fd026ec-58e9-4883-9014-1e2c5e48c04a.png" width="800">
+
+### Links
+
+* Site URL: [@Netlify](https://my-first-password-generator.netlify.app/)
+
+### What I learned
+
+- Don't leave any "[Broken Windows](https://medium.com/@learnstuff.io/broken-window-theory-in-software-development-bef627a1ce99)" so to speak (I.E. tackle ALL edge cases for the best user experience!)
+- Introducted to JavaScript and connecting it to DOM elements to behave as described (already familiar with OOP in C#/C++)
+
+
+### Useful resources
+
+- [Similar Guide](https://www.pcmag.com/how-to/how-to-create-a-strong-password-generator) - While I did not use any guide or tutorial aside from fixing some bugs, this guide provides users with another way to setup a project like this!
+- [FreeCodeCamp](https://www.freecodecamp.org/news/html-css-and-javascript-explained-for-beginners/) - Course on HTML / CSS / JS
+- [W3 Schools](https://www.w3schools.com/html/) - Amazing resource for HTML / CSS fundamentals and tricks.
+
 
 - [Our courses](https://scrimba.com/allcourses)
 - [The Frontend Career Path](https://scrimba.com/learn/frontend)

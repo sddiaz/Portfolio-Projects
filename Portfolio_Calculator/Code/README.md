@@ -42,11 +42,10 @@ GitHub account, but I know it'll be a good reminder of where I came from after m
 
 ### What I learned
 
-- Introduced to Flexbox & Layout Responsiveness
-- First Time Constructing / Setting up a Database
+- Clean, well commented, maintainable code is a *must*
+- Responsive layouts are easier said than done! This being my first design didn't use them, but all of my other projects do / will. 
 
 
 ### Useful resources
 
-- [Database Setup](https://www.youtube.com/watch?v=bIiEv__QNxw&ab_channel=IAmTimCorey) - .NET MVC Data Access Tutorial
-- [W3 Schools](https://www.w3schools.com/html/) - Amazing resource for HTML / CSS fundamentals and tricks.
+- [Similar Project](https://www.youtube.com/watch?v=eSrsXt5bP50&ab_channel=SabriMevi%C5%9F) - I used 0 tutorials or guides for this project, but this guide gives you the details of how something like this would work!

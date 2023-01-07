@@ -6,6 +6,7 @@ This is a basic
 
 - [Overview](#overview)
   - [Project Requirements](#Project-Requirements)
+  - [Technologies Utilized](#Technologies-Utilized)
   - [Screenshots](#screenshots)
   - [Links](#links)
 - [My process](#my-process)
@@ -20,6 +21,14 @@ This is a basic
 - Unique ID Generator (1000 - 9999) 
 - Error Checking
 - Appealing / Responsive Layout
+
+### Technologies Utilized
+
+- ASP.NET 
+- Microsoft SQL 
+- HTML 
+- CSS 
+- C#
 
 ### Screenshots
 

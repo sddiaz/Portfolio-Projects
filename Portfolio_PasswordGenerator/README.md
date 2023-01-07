@@ -1,4 +1,4 @@
-# Portfolio Projects - Clippit
+# Portfolio Projects - Password Generator
 
 This simple password generator is nothing that hasn't been done a thousand times, so my goal was to make the UI experience the focal point. This was my first time really focusing on creating a pleasant UI, and I think I got the job done. Plenty of moving parts and things that are nice to look at. I included custom switches, a reactive slider, plenty of hover effects, an infinite carousel, and more. I learned a ton this project, mostly about organizing projects and working on creating clean code.   
 ## Overview
@@ -21,7 +21,7 @@ This simple password generator is nothing that hasn't been done a thousand times
 
 ### Links
 
-* Site URL: [@Somee](https://my-first-password-generator.netlify.app/)
+* Site URL: [@Netlify](https://my-first-password-generator.netlify.app/)
 
 ### What I learned
 

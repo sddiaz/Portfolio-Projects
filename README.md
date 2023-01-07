@@ -1,7 +1,7 @@
 # Portfolio-Projects   
-A chronological series of in-progress _personal_ projects I've done to increase my knowledge of software development.  
-(Many more work-related projects have been completed, these are solely the personal ones).  
-**(A personal portfolio website will be up once I have a sufficient number of projects finished)**
+* A chronological series of in-progress _personal_ projects I've done to increase my knowledge of software development.  
+* (Many more work-related projects have been completed, these are solely the personal ones).  
+* **(A personal portfolio website will be up once I have a sufficient number of projects finished)**
 
 
 ## **Navigate to a folder to take a look, but here's some images of the projects as a preview!**: 

@@ -7,8 +7,7 @@ This simple static page is a part of my journey to learn React! I wanted to get 
 ### Project Requirements
 
 - Appealing Design (Focal Point)
-- Responsive Layout 
-- Error Checking and Handling All Edge Cases
+- Responsive Layout (mobile friendly)
 
 ### Technologies Utilized
 

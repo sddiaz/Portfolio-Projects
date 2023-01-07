@@ -157,7 +157,8 @@ img:hover {
     align-items: center;
 }
 .cards--svg {
-    transform: scale(3); 
+    height: 30px; 
+    width: 30px;
     fill: var(--accent);
     transition: 0.3s;
     transition-property: fill; 
@@ -207,6 +208,10 @@ img:hover {
   .cards {
     flex-direction: column;
     align-items: center;
+  }
+  .cards--svg {
+      height: 30px; 
+      width: 30px;
   }
   img {
       width: 80vw;

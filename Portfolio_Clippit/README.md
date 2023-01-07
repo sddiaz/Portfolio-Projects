@@ -27,7 +27,7 @@ This is a basic
 
 ### Links
 
-* Site URL: [@Somee](https://clippit.somee.com/)
+* Site URL: [@Somee](http://clippit.somee.com/)
 
 ### What I learned
 

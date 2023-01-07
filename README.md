@@ -23,7 +23,7 @@
 <html lang="en">
   <body>
     <div class="row">
-<img src="https://user-images.githubusercontent.com/101738608/211128167-4807830d-8285-4c0d-9d3c-bca8ef4ca33e.png" width="200">
+<img src="https://user-images.githubusercontent.com/101738608/211128167-4807830d-8285-4c0d-9d3c-bca8ef4ca33e.png">
 <img src="https://user-images.githubusercontent.com/101738608/211128218-c78f62f9-02bd-496b-8773-62d5722a17d9.png" width="200">
   </div>
   </body>

@@ -27,7 +27,7 @@ This simple static page is a part of my journey to learn React! I wanted to get 
 
 ### What I learned
 
-- React Fundamentals
+- Fundamentals of react (project settup / file layout, syntax, basic project structure)
 - Reausable Components 
 - Props
 - Data Mapping from a file to an array of elements. 
